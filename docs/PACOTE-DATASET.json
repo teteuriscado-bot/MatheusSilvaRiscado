@@ -1,0 +1,15 @@
+{
+  "arquivo": "DATASET-FARMTECH-FASE6.zip",
+  "sha256": "f1f893f1d2b219f20f9c180c523bf71c26ab6de82bd957be160cd631a92302a4",
+  "bytes": 42042995,
+  "imagens": 80,
+  "rotulos": 80,
+  "caixas": 173,
+  "classes": [
+    "garrafa",
+    "banana"
+  ],
+  "raiz_zip": "conteudo de dataset, sem pasta externa",
+  "data": "2026-10-04",
+  "revisao_publicacao": "LEIA-ME atualizado após a execução; imagens e rótulos mantidos byte a byte."
+}

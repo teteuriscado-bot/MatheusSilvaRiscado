@@ -1,0 +1,23 @@
+[
+  {
+    "data": "2026-10-04",
+    "arquivo": "garrafa_011.txt",
+    "split": "train",
+    "linha": 1,
+    "motivo": "Caixa original incluía o topo de uma colher escura atrás da tampa. Revisão dos extremos visíveis da garrafa.",
+    "antes_yolo": "0 0.503959 0.508909 0.175204 0.487751",
+    "depois_yolo": "0 0.507500 0.520625 0.155000 0.446250",
+    "depois_xyxy_pixels": [
+      516,
+      476,
+      702,
+      1190
+    ],
+    "dimensoes_imagem": [
+      1200,
+      1600
+    ],
+    "metodo": "Ajuste manual após inspeção da foto original; não inferência automática.",
+    "zip_original_preservado": "labels_matheussilvariscado_rm573622_fase6_2026-10-04-05-52-00.zip"
+  }
+]

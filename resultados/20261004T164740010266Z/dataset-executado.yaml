@@ -1,0 +1,8 @@
+names:
+- garrafa
+- banana
+nc: 2
+path: /content/farmtech_fase6/dataset_20261004T164740010266Z
+test: images/test
+train: images/train
+val: images/val

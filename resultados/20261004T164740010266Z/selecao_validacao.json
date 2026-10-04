@@ -1,0 +1,1 @@
+{"epocas": 60, "criterio": "maior mAP50_95 de validacao; desempate menor numero de epocas"}

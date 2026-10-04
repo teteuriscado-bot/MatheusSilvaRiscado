@@ -1,0 +1,16 @@
+{
+  "run_id": "20261004T164740010266Z",
+  "arquivo": "RESULTADOS-FARMTECH-20261004T164740010266Z.zip",
+  "bytes": 82212467,
+  "sha256": "3efd48b69f6c560f98e9104c0e6f2e688e81b1079912923af914671b69db4abf",
+  "itens": 99,
+  "imagens_decodificadas": 67,
+  "metricas_conferidas_contra_predicoes": true,
+  "linhas_tempos": 160,
+  "historicos_completos": [
+    30,
+    60
+  ],
+  "cnn_epocas": 7,
+  "conteudo": "96 artefatos originais, notebook final e dois registros de evidência; dataset distribuído separadamente"
+}

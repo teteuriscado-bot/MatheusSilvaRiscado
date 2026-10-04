@@ -1,0 +1,405 @@
+{
+  "verificacao": "Contagem de caixas e classes visíveis no editor; exportação YOLO ainda não recuperada.",
+  "imagens": [
+    {
+      "arquivo": "banana_001.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_002.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_003.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_004.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_005.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "banana_006.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_007.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "banana_008.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_009.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_010.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_011.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_012.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_013.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_014.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_015.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_016.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_017.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_018.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_019.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_020.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_021.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_022.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_023.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_024.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_025.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_026.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_027.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_028.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "banana_029.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "banana_030.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "banana_031.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_032.jpg",
+      "sem_classe": false,
+      "rotulos": 7
+    },
+    {
+      "arquivo": "banana_033.jpg",
+      "sem_classe": false,
+      "rotulos": 5
+    },
+    {
+      "arquivo": "banana_034.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_035.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_036.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "banana_037.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_038.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_039.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "banana_040.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_001.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_002.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_003.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_004.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "garrafa_006.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "garrafa_007.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_010.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_011.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_012.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_013.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_014.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_015.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_016.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_017.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_018.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_019.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_020.jpg",
+      "sem_classe": false,
+      "rotulos": 3
+    },
+    {
+      "arquivo": "garrafa_021.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_022.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_023.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_024.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_025.jpg",
+      "sem_classe": false,
+      "rotulos": 6
+    },
+    {
+      "arquivo": "garrafa_026.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "garrafa_027.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_028.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_029.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_030.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_031.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_032.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_033.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "garrafa_034.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_035.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    },
+    {
+      "arquivo": "garrafa_036.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_037.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_038.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_039.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_040.jpg",
+      "sem_classe": false,
+      "rotulos": 9
+    },
+    {
+      "arquivo": "garrafa_041.jpg",
+      "sem_classe": false,
+      "rotulos": 2
+    },
+    {
+      "arquivo": "garrafa_042.jpg",
+      "sem_classe": false,
+      "rotulos": 1
+    },
+    {
+      "arquivo": "garrafa_043.jpg",
+      "sem_classe": false,
+      "rotulos": 4
+    }
+  ]
+}

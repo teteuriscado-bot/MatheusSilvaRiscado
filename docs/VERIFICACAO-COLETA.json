@@ -1,0 +1,33 @@
+{
+  "data": "2026-10-03",
+  "etapa": "coleta; rotulacao pendente",
+  "imagens": 80,
+  "garrafas_autor": 14,
+  "garrafas_commons": 26,
+  "bananas_commons": 40,
+  "extras_duas_classes": 3,
+  "sha256_unicos": 80,
+  "pixels_unicos": 80,
+  "grupos_entre_splits": 0,
+  "rotulos_txt_presentes": 0,
+  "splits": {
+    "train": {
+      "garrafa": 32,
+      "banana": 32
+    },
+    "val": {
+      "garrafa": 4,
+      "banana": 4
+    },
+    "test": {
+      "garrafa": 4,
+      "banana": 4
+    }
+  },
+  "limitacoes": [
+    "Sem verificação de caixas: ainda não rotuladas.",
+    "Agrupamento por autor não prova independência absoluta de todas as fontes.",
+    "Fotos públicas podem ter aparecido no pré-treino externo; sobreposição não auditada.",
+    "Extras da mesma sessão de treino não são um teste independente."
+  ]
+}

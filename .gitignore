@@ -1,0 +1,37 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+*.cache
+*.part
+yolov5/
+*.pt
+*.weights
+*.keras
+
+# Preservar os originais particulares somente no computador; usar as cópias sem EXIF no dataset.
+/coleta/garrafas/originais_autor/
+
+# Pesos devem ser entregues por link documentado ou release, quando necessário.
+# Não ignorar o notebook executado, os CSVs de métricas e os prints da entrega.
+
+# Pacote portátil redundante e eventos TensorBoard; CSVs e gráficos permanecem versionáveis.
+/RESULTADOS-FARMTECH-*.zip
+**/events.out.tfevents.*
+
+# O dataset ZIP é distribuído na versão de download; imagens e rótulos seguem no Git.
+/DATASET-FARMTECH-FASE6.zip
+/labels_*.zip
+
+# Coleção original e materiais de trabalho permanecem locais. Créditos também estão no dataset.
+/coleta/*
+!/coleta/garrafas/
+/coleta/garrafas/*
+!/coleta/garrafas/CREDITOS.md
+!/coleta/garrafas/fontes_garrafas.csv
+!/coleta/bananas/
+/coleta/bananas/*
+!/coleta/bananas/CREDITOS.md
+!/coleta/bananas/fontes_bananas.csv
+/evidencias/colab/notebook-executado-original.ipynb
+/evidencias/colab/conexao-drive-pendente.jpg
+/evidencias/makesense/exportacao-pendente.jpg

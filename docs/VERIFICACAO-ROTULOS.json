@@ -1,0 +1,622 @@
+{
+  "data_validacao": "2026-10-04",
+  "origem": "labels_matheussilvariscado_rm573622_fase6_2026-10-04-05-52-00.zip",
+  "sha256_zip_original": "d372283072f6846d3bf6f00a8c159704006987384186583d233b216711322149",
+  "classes": {
+    "0": "garrafa",
+    "1": "banana"
+  },
+  "imagens": 80,
+  "arquivos_txt": 80,
+  "caixas": 173,
+  "imagens_por_split": {
+    "train": 64,
+    "test": 8,
+    "val": 8
+  },
+  "caixas_por_classe": {
+    "garrafa": 115,
+    "banana": 58
+  },
+  "validacoes": [
+    "CRC do ZIP",
+    "Nomes correspondem às 80 imagens",
+    "Cinco campos finitos por linha",
+    "IDs de classe correspondem ao manifesto",
+    "Caixas positivas dentro da imagem",
+    "Nenhum TXT vazio, órfão ou caixa idêntica duplicada",
+    "Contagem por imagem corresponde à interface",
+    "Auditor do notebook executado com os dados reais",
+    "Divisão 32/4/4 por classe",
+    "Nenhum grupo registrado cruza splits",
+    "Nenhuma duplicata exata de pixels"
+  ],
+  "coordenadas_alteradas_na_importacao": false,
+  "revisao_visual_exportacao": "Cinco folhas inspecionadas, cobrindo as 80 imagens; garrafa_011 ampliada e corrigida. Caixas em cenas densas/ocluídas continuam sujeitas à ambiguidade descrita no protocolo.",
+  "modelos_executados": false,
+  "registros": [
+    {
+      "arquivo": "banana_001.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "e37ddab1a8d975e19b858ffe5080866289d588f15eda5c68956e8f60318f8e53"
+    },
+    {
+      "arquivo": "banana_002.jpg",
+      "split": "test",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "0ccd7003578746bd359509b5ed9156abfc61f18fb509c86cb16339e3c575c796"
+    },
+    {
+      "arquivo": "banana_003.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "89eaa7e2fe9a113b3fe6b6127172afa442632c2a2378ef5ff27c30aca2bbeb30"
+    },
+    {
+      "arquivo": "banana_004.jpg",
+      "split": "val",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "2b96a5466bc62a3cc7e7413abf38caff29b24da107049efe38000e84acdfe28a"
+    },
+    {
+      "arquivo": "banana_005.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 2,
+      "sha256_txt": "82b34db21cc82b96faaa5ef805dc3b3e7746c4106bd6ba398de656248096b2bc"
+    },
+    {
+      "arquivo": "banana_006.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "88d98909d9d167668976b38d6c44b7820cda1dcb5ac51e07a3d7f00a481f68b0"
+    },
+    {
+      "arquivo": "banana_007.jpg",
+      "split": "val",
+      "classe": "banana",
+      "caixas": 2,
+      "sha256_txt": "a25b98116e8fb509476a7821bf152697d07bb40dfc02dd36501c4bc8adf46f74"
+    },
+    {
+      "arquivo": "banana_008.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "3e90c245368551b03c986afdcee545abf1f82c0acf07706cfa34943c5066e28f"
+    },
+    {
+      "arquivo": "banana_009.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "f9eae439998c9e97224c78cf33480bcd3ac763f9d0a3fc4c85ca9ea3b3906f4d"
+    },
+    {
+      "arquivo": "banana_010.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "3af9270a24acd219272d4c10ac960bb18aeedb047c56fe21e6d01783cdb49a55"
+    },
+    {
+      "arquivo": "banana_011.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "3b2c55f13a285c0649be45a855b6e1c43717c245e9040024f222e3757fd81480"
+    },
+    {
+      "arquivo": "banana_012.jpg",
+      "split": "val",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "f60cc5484f174109b0b02d36d75d18041210136c0fcca20dfbf2a8bf69e008e4"
+    },
+    {
+      "arquivo": "banana_013.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "ca2ee9650c5d3bcc0733cd0f9ea84117a03c9a724ee263614743cfa5b424e9af"
+    },
+    {
+      "arquivo": "banana_014.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "9f7fff1c35c8457285144b7f7f3d5fbecd713fa3eb836e71c0571f76d4cb5ab7"
+    },
+    {
+      "arquivo": "banana_015.jpg",
+      "split": "test",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "165bf2e6529049386d7152d6415ff0cb67421928cf5c4e901515b31281778fa1"
+    },
+    {
+      "arquivo": "banana_016.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "afdd1a4d2b0fc04923af8f27e970c9fef3a7ad79f95c24a95050a721b78f1d12"
+    },
+    {
+      "arquivo": "banana_017.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "26c6b9a1e9d15e0ea79fb34d1dac549bfec85713e0543cb3f811684d9800498d"
+    },
+    {
+      "arquivo": "banana_018.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "61c910d21146e5d7c1bac10d2d907f334c19f0687669ce556ca1e0bcb0d7a052"
+    },
+    {
+      "arquivo": "banana_019.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "04c3d9008cb6ce917925e922fb121d85fbcd912ccd95e74eb0295cb62121e439"
+    },
+    {
+      "arquivo": "banana_020.jpg",
+      "split": "val",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "acf83b05c5175de191ff1fabe2542090f86dee155f0495a00f080145b7f4d15d"
+    },
+    {
+      "arquivo": "banana_021.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "1a27915259da792c83ea4b56c19451d9c2fcb886d9d4a7cfcc35d85f3497d554"
+    },
+    {
+      "arquivo": "banana_022.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "65df8d1e90aacd6be0b7b076e48d1a6382eb633223b35a59a0498d8b27727a07"
+    },
+    {
+      "arquivo": "banana_023.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "d5cd1c149d01ca9f1a4015b81c37db3b4d7bbb7f00d767232cfb613a16255c06"
+    },
+    {
+      "arquivo": "banana_024.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "5a5ad5ed78884ec44e28a9353dda3a898fef25160c2cdb541577dac8c9ad3a62"
+    },
+    {
+      "arquivo": "banana_025.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "a6d3f33599a5428f707571cfad12e0e08006c9d8933518352085c04c0ea7409a"
+    },
+    {
+      "arquivo": "banana_026.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "4053a0c923bfe4b0fef61b702338dafd521ca18b44180a5747d94383b0c17345"
+    },
+    {
+      "arquivo": "banana_027.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "0aae6ac1785c1b3795331c7b42aef1e3bf548d6f916d7a9cd056a1ed62f6f488"
+    },
+    {
+      "arquivo": "banana_028.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 4,
+      "sha256_txt": "a8e6ace2b53a5655cd8bec0bf743b06a04cac11b678bb71875f176f13a48a3f7"
+    },
+    {
+      "arquivo": "banana_029.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 2,
+      "sha256_txt": "420d21e033c3566fdea798cb7a73d4badcbe6aae2c344ee6be8646e7c0927f6a"
+    },
+    {
+      "arquivo": "banana_030.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 2,
+      "sha256_txt": "bc0b97cefb2d125fbdfd7f9f5f9913dc37d5904918847497c14a9cf9c46f5ca9"
+    },
+    {
+      "arquivo": "banana_031.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "d908c2f2d68b938acde7d32fa38fda7f242c2612ce5c109ce5982bdb7e525211"
+    },
+    {
+      "arquivo": "banana_032.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 7,
+      "sha256_txt": "0c8673f37fd86e71cc88016862426f773ab50857464694d34b68d8349836887f"
+    },
+    {
+      "arquivo": "banana_033.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 5,
+      "sha256_txt": "28a7d04c8f81a356e53e983c2e48a19ee7c94c5dac219454c3b9ba8795916cfb"
+    },
+    {
+      "arquivo": "banana_034.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "d4054f75c034de46cb4b0c3bc730f5e3ae57813d27afa11a45be07c717336a95"
+    },
+    {
+      "arquivo": "banana_035.jpg",
+      "split": "test",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "0d0cfc0560aa2a198b9b1cda8ed65bf8626f86d6dcac286bf7bc32a2bb35e9f8"
+    },
+    {
+      "arquivo": "banana_036.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 2,
+      "sha256_txt": "a18197d21d2841f10ad2f78f6d34e08f25a092dd9e0131b8969f12da89a94d4b"
+    },
+    {
+      "arquivo": "banana_037.jpg",
+      "split": "test",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "9d38e280da4a0b72190a28564ded32027516dbfceaea0e51a1b0237a9f5a5ef3"
+    },
+    {
+      "arquivo": "banana_038.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "7d904f1006922ce0f96fd5f59c54fec0e3beb5ee4b60de0d74d234103171c18c"
+    },
+    {
+      "arquivo": "banana_039.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "35fda6192d6f192a49fcfeabe0251a4b8c5af5528f839328ddb674bfd4697ecb"
+    },
+    {
+      "arquivo": "banana_040.jpg",
+      "split": "train",
+      "classe": "banana",
+      "caixas": 1,
+      "sha256_txt": "14bcaf76494f5091eae402414417ddeabaf1bc134c083590b69b445005224437"
+    },
+    {
+      "arquivo": "garrafa_001.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "ad59002b48df3be3abcd11c3cd78e1b534bbea1c9a5921414de1826e08d40f98"
+    },
+    {
+      "arquivo": "garrafa_002.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "3485cef55f08589367fcae2b3f1e16973be10d8660ecb127be921bb3f4ac2f3d"
+    },
+    {
+      "arquivo": "garrafa_003.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "fd4f154bc546da803fbc0d8b4499da7964eb53b5825eb20e2bab651f0a451f5b"
+    },
+    {
+      "arquivo": "garrafa_004.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "58ba19ac094fefb3cf732b0de1110ff57c5f04daf97b9af0a837a35d40c20e62"
+    },
+    {
+      "arquivo": "garrafa_006.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "e1637b93a914ca54dc8cce8d512af31ab45ba559de534686f6f06b04fa872dae"
+    },
+    {
+      "arquivo": "garrafa_007.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "4f1966d5b6ad02e836db8564da4c742b03e7e797e85fd90f09a952ff1a9d2de3"
+    },
+    {
+      "arquivo": "garrafa_010.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "4014cc94e95339a9b0eb087a4f88f4df7d7ee42b62ee1d51ceb7e30389abdff6"
+    },
+    {
+      "arquivo": "garrafa_011.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "4c1437aa731bcd2fb3d737b8b652eb6b3fd992d1ba920508d0d58bc43ff9d340"
+    },
+    {
+      "arquivo": "garrafa_012.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "cc6fd403ee3c15450f2d659acafcbe4f1abe281cf84b1806e1ded8bc7704f182"
+    },
+    {
+      "arquivo": "garrafa_013.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "a9255a0f5e5dc3e75235466c72e10f850d29e950076e0fb38c2502e50e4414eb"
+    },
+    {
+      "arquivo": "garrafa_014.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "2a036946e36ea5184e838dd475e2f728e8e31585181ce280248150ad6bf7982e"
+    },
+    {
+      "arquivo": "garrafa_015.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "ec679faa9f75162907733553c8600397b6f3294c6c40bfde7a0c438367530f09"
+    },
+    {
+      "arquivo": "garrafa_016.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "cec185d57e954f0243d47814331910e4d2ecbac9b26ec675e9d01c4878a9718f"
+    },
+    {
+      "arquivo": "garrafa_017.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "1cabb08151884aab32a043830ffcfde0369a1aeb81e8e74fc2171b6d12470b0b"
+    },
+    {
+      "arquivo": "garrafa_018.jpg",
+      "split": "val",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "123588b62bec8a83c965c58ec651d468e25e9451fea0a6c285ad4157659f93ca"
+    },
+    {
+      "arquivo": "garrafa_019.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "3d310b961334fa066988cc2ab69511ed3619221f7bd3e6a63590567385ca1832"
+    },
+    {
+      "arquivo": "garrafa_020.jpg",
+      "split": "test",
+      "classe": "garrafa",
+      "caixas": 3,
+      "sha256_txt": "53bbbfab5669cb840c9ee0dc1caf4d415e1c5064d4916c044625b1b50623d199"
+    },
+    {
+      "arquivo": "garrafa_021.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "7f9e8d080ca63ac24eb76b395e727f8090f63b60ccbfe38e726247e4de6b6d26"
+    },
+    {
+      "arquivo": "garrafa_022.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "25efe5c460f6f4cc4515ed2721e50ffb3a131f5db29901c0ae991c92b87b4dbe"
+    },
+    {
+      "arquivo": "garrafa_023.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "e207d94621d172ef40831b9a05034c223797093bc6c58a031f9726faba52e32e"
+    },
+    {
+      "arquivo": "garrafa_024.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "a26838d983e06eed4870955f7bee5fdf3a9540a12ed5e196d97c4582ee61710d"
+    },
+    {
+      "arquivo": "garrafa_025.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 6,
+      "sha256_txt": "3547106116caff24a1b78a4a0148f6ea73d10a9ee5474399002508d8d9d86927"
+    },
+    {
+      "arquivo": "garrafa_026.jpg",
+      "split": "val",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "3a409531b14715df2450b328672ccf25e88e0d287afa3d8401ce316c8ff860f5"
+    },
+    {
+      "arquivo": "garrafa_027.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "e2ee105d0a5045b7d979984fba7b8c0f054d85db7d762f3c90d6223adc99666c"
+    },
+    {
+      "arquivo": "garrafa_028.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "2d9e3ce0d0f818974dcbeb42247c56b5983eabbd302bb4bc3e48b841e43afc80"
+    },
+    {
+      "arquivo": "garrafa_029.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "94d896e244ebc952a7d3d3e6055f268fca906eb0e9f93cd6528abca0fc038473"
+    },
+    {
+      "arquivo": "garrafa_030.jpg",
+      "split": "test",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "9151e7be66853e3342387e73a94dbdb1881244118c79761d4e01dcf5bebacdfa"
+    },
+    {
+      "arquivo": "garrafa_031.jpg",
+      "split": "val",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "f4d8c5e7963798cf97f020f95ea6b3d55e77774ed5b1754b1fa689256d8f6dca"
+    },
+    {
+      "arquivo": "garrafa_032.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "6ffd8a762439e62022b16141a1a02eb3a2e92c92a0fdb8a4dd2425eea2e6beb1"
+    },
+    {
+      "arquivo": "garrafa_033.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "6cf58d94b9ec1f1a5554797029ae52baae6ea96146a839e58b44be14cc64ccac"
+    },
+    {
+      "arquivo": "garrafa_034.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "d3b1f703136fae8c5fbb5170941deed6d78b5789532ee834616994874212f418"
+    },
+    {
+      "arquivo": "garrafa_035.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "cee36a008e4c8b05e7d6fe5efd08faab41d7e4630851e1c02806e05ee084be3e"
+    },
+    {
+      "arquivo": "garrafa_036.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "f05ec826135b29b03ef84fdf46a0aae8956751b2ee04cf9761631fccc6227e93"
+    },
+    {
+      "arquivo": "garrafa_037.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "2a115fd85a9cd34ab3890976132aecbe5374eb16345ba62b7bd4db11c2b33c6e"
+    },
+    {
+      "arquivo": "garrafa_038.jpg",
+      "split": "test",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "a214e9357f5896954843abb6eb16dac0f935887b6a725c4779e5ba95632862a0"
+    },
+    {
+      "arquivo": "garrafa_039.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "ae30bf17809dd91e7fcd4e4debe988716fecd89ae622bc04d105bdde61d88766"
+    },
+    {
+      "arquivo": "garrafa_040.jpg",
+      "split": "val",
+      "classe": "garrafa",
+      "caixas": 9,
+      "sha256_txt": "cfb6b1dd45267f102dc88073672a3b47e9cde72d52b1ee70d0c548dde494c0ea"
+    },
+    {
+      "arquivo": "garrafa_041.jpg",
+      "split": "test",
+      "classe": "garrafa",
+      "caixas": 2,
+      "sha256_txt": "580ea5d3cec6b5092f0fc771a9824ee75b8fddd55106cd56c01c5885c13deec5"
+    },
+    {
+      "arquivo": "garrafa_042.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 1,
+      "sha256_txt": "b9bfb1532b3529cff0607e480a3396363d00ea40aa69861b742060a3beeca070"
+    },
+    {
+      "arquivo": "garrafa_043.jpg",
+      "split": "train",
+      "classe": "garrafa",
+      "caixas": 4,
+      "sha256_txt": "ca189c941f821de50a847da8c7db782e5f6c0261b5ad9860df0bd7bbd49d6b6f"
+    }
+  ],
+  "ajustes_apos_importacao": [
+    {
+      "data": "2026-10-04",
+      "arquivo": "garrafa_011.txt",
+      "split": "train",
+      "linha": 1,
+      "motivo": "Caixa original incluía o topo de uma colher escura atrás da tampa. Revisão dos extremos visíveis da garrafa.",
+      "antes_yolo": "0 0.503959 0.508909 0.175204 0.487751",
+      "depois_yolo": "0 0.507500 0.520625 0.155000 0.446250",
+      "depois_xyxy_pixels": [
+        516,
+        476,
+        702,
+        1190
+      ],
+      "dimensoes_imagem": [
+        1200,
+        1600
+      ],
+      "metodo": "Ajuste manual após inspeção da foto original; não inferência automática.",
+      "zip_original_preservado": "labels_matheussilvariscado_rm573622_fase6_2026-10-04-05-52-00.zip"
+    }
+  ]
+}
