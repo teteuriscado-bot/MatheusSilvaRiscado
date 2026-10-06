@@ -1,6 +1,6 @@
 # Roteiro do vídeo — duração-alvo de 4min40s
 
-O notebook foi executado e revisado. Ler a discussão para entender as conclusões e usar os resultados reais nas falas. Não dizer que a solução está validada em produção.
+Este roteiro usa os resultados da execução original de 04/10/2026, preservados no notebook principal. A verificação de 06/10/2026 tem um relatório separado; não misturar suas métricas com as falas abaixo. O notebook foi executado e revisado. Ler a discussão para entender as conclusões e usar os resultados reais nas falas. Não dizer que a solução está validada em produção.
 
 | Tempo | Tela e conteúdo |
 |---|---|

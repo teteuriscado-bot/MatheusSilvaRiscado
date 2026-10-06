@@ -4,7 +4,7 @@
   "fonte": "Google Drive: FarmTechFase6/resultados/20261004T164740010266Z",
   "notebook_colab": "https://colab.research.google.com/drive/1-sFLeLbrjNCv6DkZIa4gj57npGw_rIHP",
   "notebook_original_sha256": "41fa827a88c9aa4f6366f14bd55bc68b55fd44c22f80ddf770d0e8a90704c19b",
-  "notebook_final_sha256": "9abb0367fbce218729c90754ebedc87228fed94dc511779eeb067acd4498a72d",
+  "notebook_final_sha256": "7660b7664f1e9860a0d10a79d215d7d20567757e145960ad685b6b7d85f3860a",
   "code_cells": 15,
   "code_cells_executed": 15,
   "error_outputs": 0,
@@ -13,7 +13,7 @@
     "matrizes_confusao_teste.png",
     "painel_teste.png"
   ],
-  "segunda_execucao_integral_em_sessao_limpa": false,
+  "segunda_execucao_integral_em_sessao_limpa": true,
   "arquivos": [
     {
       "arquivo": "ambiente.json",
@@ -497,5 +497,7 @@
     }
   ],
   "notebook_publico": "https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb",
-  "publicacao": "A revisão para publicação altera somente markdown e links; preserva códigos, contadores e saídas."
+  "publicacao": "A revisão para publicação altera somente markdown e links; preserva códigos, contadores e saídas.",
+  "notebook_antes_registro_sessao_limpa_sha256": "9abb0367fbce218729c90754ebedc87228fed94dc511779eeb067acd4498a72d",
+  "registro_segunda_execucao": "docs/VERIFICACAO-SESSAO-LIMPA.json"
 }

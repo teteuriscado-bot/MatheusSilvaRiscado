@@ -4,7 +4,7 @@
 
 Protótipo didático para reconhecer garrafas e bananas em imagens e comparar YOLOv5 customizado, YOLOv3 pré-treinado e uma CNN treinada do zero.
 
-**Estado em 04/10/2026: modelos executados, resultados preservados e discussão revisada. Publicação inicial; vídeo e envio pelo portal pendentes.**
+**Estado em 06/10/2026: modelos executados e segunda execução integral em sessão limpa aprovada. Vídeo e envio pelo portal pendentes.**
 
 A [validação dos rótulos](docs/VERIFICACAO-ROTULOS.json) registra os dados reais. A [verificação da execução](docs/VERIFICACAO-EXECUCAO.json) documenta as 15 células executadas, sem saídas de erro, e os hashes dos 96 artefatos recuperados do Drive. O [checklist do barema](docs/CHECKLIST-BAREMA.md) acompanha os cinco critérios.
 
@@ -24,7 +24,7 @@ Procedência e créditos: [manifesto das 80 imagens](dataset/fontes.csv), [garra
 
 ![Detecções do YOLOv5 selecionado nas oito imagens de teste](resultados/20261004T164740010266Z/painel_teste.png)
 
-As instruções completas e a análise estão no notebook; o [guia de entrega](COMECE-AQUI.md) e o [roteiro do vídeo](docs/ROTEIRO-VIDEO.md) orientam os próximos passos. A sessão original teve retomadas para autorização do Drive e correção do download dos pesos; uma segunda reprodução integral em sessão limpa ainda está pendente.
+As instruções completas e a análise estão no notebook; o [guia de entrega](COMECE-AQUI.md) e o [roteiro do vídeo](docs/ROTEIRO-VIDEO.md) orientam os próximos passos. A sessão original teve retomadas para autorização do Drive e correção do download dos pesos; a segunda reprodução integral foi concluída em 06/10/2026, sem erros. A [evidência da sessão limpa](evidencias/reexecucao-20261006/README.md) registra código, saídas, hashes e diferenças entre as rodadas.
 
 O experimento usa 64 imagens para treino, 8 para validação e 8 para teste. A base pequena serve a uma demonstração acadêmica e exige cautela na interpretação de generalização.
 

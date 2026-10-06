@@ -3,7 +3,7 @@
 **Matheus Silva Riscado · RM573622 · individual**  
 **Prazo informado: 13/10/2026. Meta de conclusão: 12/10/2026.**
 
-As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. A publicação inicial está em `teteuriscado-bot/MatheusSilvaRiscado`. Ainda faltam a segunda reprodução integral em sessão limpa, o vídeo e o envio no portal. A entrega acadêmica ainda não está completa.
+As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. A publicação inicial está em `teteuriscado-bot/MatheusSilvaRiscado`. A segunda reprodução integral em sessão limpa foi concluída em 06/10/2026. Ainda faltam o vídeo, seu link no README e o envio no portal. A entrega acadêmica ainda não está completa.
 
 ## O que vamos construir
 
@@ -71,7 +71,7 @@ O Colab copiará os dados para o disco temporário da sessão, para acelerar a l
 
 Arquivo: `MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb`.
 
-Abrir [o notebook executado no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb). A versão local também contém os resultados e a análise revisada. Para reproduzir, preparar os dados no próprio Drive, selecionar GPU quando disponível e executar as células em ordem. A sessão de 04/10 confirmou o funcionamento com Python 3.13.15, PyTorch 2.11.0+cu130 e TensorFlow 2.20.0; houve retomadas para autorização do Drive e correção do download dos pesos. Uma segunda execução integral em sessão limpa está pendente.
+Abrir [o notebook executado no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb). A versão local também contém os resultados e a análise revisada. Para reproduzir, preparar os dados no próprio Drive, selecionar GPU quando disponível e executar as células em ordem. A sessão de 04/10 confirmou o funcionamento com Python 3.13.15, PyTorch 2.11.0+cu130 e TensorFlow 2.20.0; houve retomadas para autorização do Drive e correção do download dos pesos. A segunda execução integral em sessão limpa foi concluída em 06/10/2026, sem erro nas 15 células; consultar `evidencias/reexecucao-20261006/`.
 
 O experimento usa 30 e 60 épocas, iniciando ambos os treinos dos mesmos pesos pré-treinados. A seleção ocorre pela validação. Os testes ficam reservados para a avaliação final. A CNN começa com pesos aleatórios; não é uma rede pré-treinada disfarçada de CNN “do zero”.
 
@@ -103,7 +103,7 @@ As etapas de coleta, rotulação, treino e análise foram antecipadas e concluí
 | 09/10 | Conferir métricas, investigar erros e escrever a análise |
 | 10/10 | Revisar README, notebook, dados e links do repositório |
 | 11/10 | Gravar e publicar o vídeo não listado |
-| 12/10 | Reexecutar em sessão limpa, testar links e concluir a entrega |
+| 12/10 | Testar links, revisar o vídeo e concluir a entrega |
 | 13/10 | Prazo informado; conferir o horário exato no portal |
 
 Depois do envio final, não realizar novos commits, conforme a orientação do enunciado. Não há monitoramento ou lembrete automático configurado por este cronograma.
@@ -121,8 +121,8 @@ Depois do envio final, não realizar novos commits, conforme a orientação do e
 - [x] Comparação de facilidade de integração, qualidade, treino e inferência.
 - [x] Conclusões revisadas com resultados e limitações reais.
 - [x] Notebook com todas as células executadas e saídas preservadas.
-- [ ] Segunda reprodução do início ao fim em sessão limpa, sem intervenções.
-- [ ] Dados acessíveis ao avaliador e instruções de reprodução testadas.
+- [x] Segunda reprodução do início ao fim em sessão limpa em 06/10/2026: 15 células sem erro nem intervenções.
+- [x] Dados baixados por URL pública e reprodução integral testada em 06/10/2026.
 - [ ] README sem links pendentes.
 - [ ] Vídeo não listado de até 5 minutos, demonstrando uma execução real.
 - [x] Repositório público com notebook, dados e resultados.
@@ -137,3 +137,8 @@ Depois do envio final, não realizar novos commits, conforme a orientação do e
 - [TensorFlow: classificação de imagens](https://www.tensorflow.org/tutorials/images/classification).
 
 Materiais FIAP consultados: PDFs dos capítulos 03, 09 e 10 disponíveis localmente na pasta `Graduação/Fase 6`. Não incluir esses PDFs de acesso individual no repositório público.
+
+
+## Verificação concluída em 06/10/2026
+
+A segunda execução em sessão limpa terminou: 15 células em ordem, sem erro, com download público do dataset. As evidências estão em `evidencias/reexecucao-20261006/`. O notebook principal e o roteiro do vídeo continuam vinculados à rodada original de 04/10; não misturar métricas das duas rodadas. Restam o vídeo, seu link no README e o envio pelo portal.

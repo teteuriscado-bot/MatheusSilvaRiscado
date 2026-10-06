@@ -1,4 +1,4 @@
-# Estado da validação — 04/10/2026
+# Estado da validação — 06/10/2026
 
 ## Verificado localmente
 
@@ -42,11 +42,11 @@ Os originais foram preservados. Fotos públicas podem ter integrado o pré-trein
 - Notebook original executado preservado em `evidencias/colab/notebook-executado-original.ipynb`. Na versão revisada, somente o markdown e os dois gráficos ausentes das células 24/26 foram atualizados; esses gráficos são os PNGs originais da execução, sem alteração. Códigos, contadores e demais saídas preservados.
 - Versão revisada enviada como nova versão do mesmo arquivo do Drive, mantendo o ID e as permissões existentes. Notebook final também salvo na raiz do projeto.
 
-## Pendências para a entrega
+## Situação da entrega
 
-1. Fazer uma segunda reprodução integral em sessão limpa e verificar acesso ao dataset em outra conta.
+1. Segunda reprodução integral em sessão limpa concluída em 06/10/2026: 15 células sem erro, contadores 1–15, dados baixados do GitHub público. O download não requer acesso ao Drive; não foi usado login de outra pessoa. Evidências em `VERIFICACAO-SESSAO-LIMPA.json` e `evidencias/reexecucao-20261006/`.
 2. A publicação disponibiliza repositório, dados e pesos com créditos e um link público do Colab baseado no GitHub. A cópia de desenvolvimento no Drive mantém as permissões do autor.
 3. Gravar vídeo não listado de até 5 minutos, incluir seu link no README e testar os acessos do avaliador.
 4. Conferir horário-limite no portal, enviar antes de 13/10/2026 e não fazer commits após o envio final.
 
-A validação local da estrutura usa JSON e AST; não substitui o validador oficial nbformat. Os modelos foram executados efetivamente no Colab, conforme as saídas preservadas. Execução técnica concluída não equivale à entrega acadêmica completa.
+A estrutura dos três notebooks (principal, exportação original da sessão limpa e cópia revisada) foi validada também pelo validador oficial nbformat 5.11.1. A sintaxe foi conferida com AST. Os modelos foram executados efetivamente no Colab, conforme as saídas preservadas. Execução técnica concluída não equivale à entrega acadêmica completa.
