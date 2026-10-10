@@ -8,10 +8,12 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 1. Use o tablet para acompanhar este roteiro e o computador para mostrar os materiais na gravação. Abra no computador as telas essenciais antes de começar.
 2. Leia somente o bloco “Sua fala”. Os passos e lembretes servem para orientar você e não precisam ser narrados.
-3. Toque nos botões na ordem indicada. Os materiais externos abrem em outra aba; volte a esta aba para continuar a leitura.
-4. O notebook público já tem as saídas salvas. Os links do Colab apontam para células específicas; se ele abrir no início, use o índice e o nome da seção indicado.
-5. Faça um ensaio com cronômetro. A meta é 4min40s, com margem de 20 segundos até o limite de 5 minutos. Não precisa esperar até o fim de cada intervalo para avançar.
-6. Teste o áudio por dez segundos e confira a legibilidade das tabelas. Avance com calma e mantenha as notificações fechadas.
+3. As quebras de parágrafo sugerem pequenas pausas. Use a fala como apoio e mantenha seu jeito de explicar; não precisa decorar nem acrescentar “né” ou “é” a cada frase.
+4. Para os nomes, mantenha “YOLO vê três” e “YOLO vê cinco”. Leia CNN como “sê-ene-ene”. O glossário nas dúvidas tem os outros termos.
+5. Toque nos botões na ordem indicada. Os materiais externos abrem em outra aba; volte a esta aba para continuar a leitura.
+6. O notebook público já tem as saídas salvas. Os links do Colab apontam para células específicas; se ele abrir no início, use o índice e o nome da seção indicado.
+7. Faça um ensaio com cronômetro. A meta é 4min40s, com margem de 20 segundos até o limite de 5 minutos. Não precisa esperar até o fim de cada intervalo para avançar.
+8. Teste o áudio por dez segundos e confira a legibilidade das tabelas. Avance com calma e mantenha as notificações fechadas.
 
 ## 1. 00:00–00:20 — Apresentação
 
@@ -24,11 +26,13 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Olá, meu nome é Matheus Silva Riscado, RM573622. Este é meu projeto individual da Fase 6. O objetivo é demonstrar, para um cliente da FarmTech Solutions, como reconhecer garrafas e bananas em imagens, comparando três abordagens de visão computacional.
+> Olá, meu nome é Matheus Silva Riscado, RM573622. Esse é meu projeto individual da Fase 6.
+>
+> A ideia é mostrar, para um cliente da FarmTech Solutions, como reconhecer e localizar garrafas e bananas em imagens, comparando três abordagens de visão computacional.
 
 **O que precisa ficar claro:** Nome correto: Matheus Silva Riscado · RM573622. Projeto individual.
 
-**Lembrete:** Comece falando com a tela já posicionada. Não gaste tempo procurando o arquivo.
+**Lembrete:** Comece com a tela posicionada. Mantenha nome e RM na abertura. O RM registrado é 573622: cinco, sete, três, seis, dois, dois.
 
 **Links de apoio — use se precisar:**
 
@@ -46,7 +50,9 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Organizei 80 fotografias reais: 40 de garrafas e 40 de bananas. Para cada classe, separei 32 para treino, quatro para validação e quatro para teste. Os dados e rótulos estão organizados no Drive. As caixas foram revisadas no Make Sense AI, totalizando 173 anotações. A auditoria verificou duplicatas e a separação dos grupos entre os conjuntos.
+> Eu organizei 80 fotos reais: 40 de garrafas e 40 de bananas. Para cada classe, separei 32 para treino, quatro para validação e quatro para teste.
+>
+> Como vocês podem ver aqui, as imagens e os rótulos estão organizados no Drive. As caixas foram revisadas no Make Sense AI, totalizando 173 anotações. Também conferi duplicatas e a separação dos grupos, para reduzir o risco de vazamento entre os conjuntos.
 
 **O que precisa ficar claro:** 173 é a quantidade de caixas anotadas. Uma penca ou cacho conectado pode receber uma única caixa.
 
@@ -76,7 +82,11 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Treinei o YOLOv5 em dois experimentos independentes, com 30 e 60 épocas, mantendo os mesmos pesos iniciais e parâmetros principais. Uma época corresponde a uma passagem pelos dados de treino. A mAP de validação, que avalia a qualidade das detecções, passou de aproximadamente 0,386 para 0,427. O tempo de treino aumentou de 202 para 341 segundos. Por esse critério, selecionei 60 épocas antes de consultar o teste. No teste, 30 épocas teve maior mAP, mostrando que mais treinamento não garante melhor resultado em novas imagens.
+> No YOLOv5, fiz dois treinos independentes: um de 30 e outro de 60 épocas, com os mesmos pesos iniciais e parâmetros principais. Cada época é uma passagem pelos dados de treino.
+>
+> Aqui comparei as curvas de perda e a qualidade das detecções. A mAP de validação passou de 0,386 para 0,427. Já o tempo de treino passou de 202 para 341 segundos.
+>
+> Pela validação, escolhi 60 épocas antes de olhar o teste. No teste, porém, 30 épocas teve maior mAP. Então, treinar mais não garantiu um resultado melhor em imagens novas.
 
 **O que precisa ficar claro:** 60 épocas não continua o treino de 30. Os dois começam nos mesmos pesos pré-treinados.
 
@@ -102,7 +112,11 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Aqui estão as saídas reais do modelo selecionado nas oito imagens de teste. Nas garrafas de vidro, ele encontrou os objetos e desenhou as caixas. Já na banana solta sobre tecido, não houve detecção acima do limiar definido. Também há um cacho em que a caixa cobre apenas parte do alvo. Por isso, reconhecer a classe e localizar corretamente o objeto são avaliações diferentes. Mantive os acertos e as falhas no relatório.
+> Aqui estão os resultados do modelo escolhido nas oito imagens de teste. Nessas garrafas de vidro, ele encontrou os objetos e desenhou as caixas.
+>
+> Já nessa banana sobre o tecido, não houve detecção acima do limite de confiança definido. E nesse cacho, a caixa cobriu só parte do alvo.
+>
+> Ou seja, o modelo reconhecer a classe não significa que localizou o objeto corretamente. Por isso, mostrei os acertos e também as falhas.
 
 **O que precisa ficar claro:** As caixas laranja são previsões do modelo. As caixas revisadas para treino são anotações de referência: são etapas diferentes.
 
@@ -130,11 +144,15 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Comparei os modelos nas mesmas oito imagens. O YOLOv3 acertou a classe em sete; o YOLOv5 de 60 épocas, em seis; o de 30 épocas e a CNN, em cinco. Ausências de detecção contam como erro. Esses números medem classificação por imagem, não a qualidade completa das caixas. Na inferência em CPU, as medianas foram aproximadamente um segundo para o YOLOv3, 180 milissegundos para o YOLOv5 de 60 épocas e 24 para a CNN. A CNN foi treinada do zero em cerca de dez segundos, mas só classifica a imagem: ela não localiza os objetos.
+> Agora, comparei os modelos nas mesmas oito imagens. O YOLOv3 acertou a classe em sete. O YOLOv5 de 60 épocas acertou em seis. O de 30 épocas e a CNN acertaram em cinco. Quando não houve detecção, contei como erro. Esses acertos são de classe, não da qualidade das caixas.
+>
+> Também medi o tempo de inferência, que é o tempo para fazer a previsão. Todos foram avaliados em CPU. As medianas foram cerca de um segundo para o YOLOv3, 180 milissegundos para o YOLOv5 de 60 épocas e 24 milissegundos para a CNN.
+>
+> A CNN foi treinada do zero em cerca de dez segundos. Ela classifica a imagem, mas não localiza os objetos.
 
 **O que precisa ficar claro:** Sem detecção entra como erro. Esses acertos são de classe por imagem e não significam que todas as caixas estejam corretas.
 
-**Lembrete:** Inferência é usar o modelo treinado para prever uma imagem. A CNN foi rápida nesta configuração, mas não resolve sozinha a localização.
+**Lembrete:** Diga “inferência”, não “interferência”. São modelos comparados nas mesmas oito imagens, não oito modelos. Faça uma pequena pausa entre os tempos. A comparação de inferência foi em CPU; os treinos YOLOv5 foram em GPU T4 e o da CNN em CPU.
 
 **Links de apoio — use se precisar:**
 
@@ -156,11 +174,17 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Na integração, o YOLOv5 exigiu rotulação e treinamento, mas entrega classes e caixas. O YOLOv3 dispensou treino local, usando pesos prontos e OpenCV. A CNN tem integração compacta com TensorFlow, porém apresentou sobreajuste: a perda de treino caiu enquanto a de validação aumentou. O treinamento foi interrompido e os melhores pesos de validação foram recuperados. Para continuar o protótipo de localização, mantive o YOLOv5 de 60 épocas, escolhido pela validação. O YOLOv3 permanece como referência, pois acertou mais classes neste teste. Como há apenas oito imagens de teste, seria necessário ampliar a base e avaliar novas condições antes de usar a solução em produção.
+> Para colocar cada solução para funcionar, o YOLOv5 exigiu rotulação e treino. Já o YOLOv3 usou pesos prontos com OpenCV, sem treino local. Na CNN, defini e treinei a rede com TensorFlow.
+>
+> A CNN apresentou sobreajuste: a perda no treino caiu, mas na validação aumentou. A parada antecipada encerrou o treino e recuperou os melhores pesos de validação.
+>
+> Para continuar o protótipo de localização, mantive o YOLOv5 de 60 épocas, escolhido pela validação. O YOLOv3 segue como referência, porque acertou mais classes nesse teste.
+>
+> Mas são só oito imagens de teste. Antes de usar em produção, é preciso ampliar a base e avaliar novas condições.
 
 **O que precisa ficar claro:** No teste, 30 épocas teve maior mAP de localização e 60 épocas teve mais acertos de classe. São critérios diferentes; isso não é uma contradição.
 
-**Lembrete:** Apenas oito imagens de teste: cada imagem muda a acurácia em 12,5 pontos percentuais. Apresente um protótipo acadêmico, sem prometer desempenho geral.
+**Lembrete:** A primeira parte compara o trabalho para integrar cada solução. Em seguida, mostre o sobreajuste na curva da CNN. Com oito imagens de teste, cada imagem muda a acurácia em 12,5 pontos percentuais; não é uma garantia de desempenho em produção.
 
 **Links de apoio — use se precisar:**
 
@@ -180,7 +204,9 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> O repositório reúne o notebook executado, os dados, os modelos e os resultados. Também fiz uma segunda execução completa em sessão limpa, com as 15 células concluídas sem erro. Houve variação nas métricas, registrada separadamente. O projeto demonstra o funcionamento da solução e apresenta seus limites e os próximos passos. Obrigado.
+> Por fim, o repositório reúne o notebook executado, os dados, os modelos e os resultados. Também fiz uma segunda execução completa em sessão limpa: as 15 células de código terminaram sem erro.
+>
+> As métricas variaram, e isso ficou registrado separadamente. O projeto mostra o funcionamento da solução, seus limites e os próximos passos. Obrigado.
 
 **O que precisa ficar claro:** Os números apresentados até aqui são de 04/10/2026. A rodada de 06/10 confirma execução e registra a variação separadamente.
 
@@ -195,6 +221,18 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 - [Checklist de avaliação](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/docs/CHECKLIST-BAREMA.md)
 
 ## Dúvidas para o ensaio
+
+**Como leio os nomes dos modelos?**
+
+Use “YOLO vê três” para YOLOv3 e “YOLO vê cinco” para YOLOv5. “Version three” e “version five” também são compreensíveis, mas não é preciso usar inglês. Escolha um padrão e mantenha. CNN: “sê-ene-ene”. CPU: “sê-pê-u”. mAP: “ême-á-pê”.
+
+**Preciso falar meu RM?**
+
+O enunciado exige nome completo e RM no nome do notebook, mas não determina que sejam narrados. O roteiro mantém os dois na abertura para identificar a apresentação. Seu RM é 573622: cinco, sete, três, seis, dois, dois.
+
+**O que foi ajustado depois do ensaio?**
+
+A fala foi dividida em frases e parágrafos menores, com transições mais naturais. Diga “inferência”, “os modelos nas mesmas oito imagens” e “o modelo reconheceu a classe”. Os tempos de inferência foram medidos em CPU; os treinos YOLOv5 ocorreram em GPU T4. A separação dos grupos reduz o risco de vazamento; revisar caixas, sozinho, não garante essa separação.
 
 **Preciso dizer quantas fotos são minhas e quantas vieram da internet?**
 
