@@ -2,18 +2,21 @@
 
 **[Abrir versão HTML para tablet](https://teteuriscado-bot.github.io/MatheusSilvaRiscado/roteiro-video.html)** · [Arquivo HTML](roteiro-video.html)
 
-Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 minutos**. Resultados apresentados: **04/10/2026**.
+Matheus Silva Riscado · RM573622 · individual. Meta: **4min30s**, limite: **5 minutos**. Resultados apresentados: **04/10/2026**.
 
 ## Antes de gravar
 
 1. Use o tablet para acompanhar este roteiro e o computador para mostrar os materiais na gravação. Abra no computador as telas essenciais antes de começar.
-2. Leia somente o bloco “Sua fala”. Os passos e lembretes servem para orientar você e não precisam ser narrados.
-3. As quebras de parágrafo sugerem pequenas pausas. Use a fala como apoio e mantenha seu jeito de explicar; não precisa decorar nem acrescentar “né” ou “é” a cada frase.
-4. Para os nomes, mantenha “YOLO vê três” e “YOLO vê cinco”. Leia CNN como “sê-ene-ene”. O glossário nas dúvidas tem os outros termos.
-5. Toque nos botões na ordem indicada. Os materiais externos abrem em outra aba; volte a esta aba para continuar a leitura.
-6. O notebook público já tem as saídas salvas. Os links do Colab apontam para células específicas; se ele abrir no início, use o índice e o nome da seção indicado.
-7. Faça um ensaio com cronômetro. A meta é 4min40s, com margem de 20 segundos até o limite de 5 minutos. Não precisa esperar até o fim de cada intervalo para avançar.
-8. Teste o áudio por dez segundos e confira a legibilidade das tabelas. Avance com calma e mantenha as notificações fechadas.
+2. A gravação analisada passou de cinco minutos. Esta versão foi encurtada, mas a duração só estará confirmada depois de ensaiar com as trocas de tela.
+3. Durante gráficos, tabelas e detecções, oculte a câmera ou posicione-a fora do conteúdo. O rosto não é exigido pelo enunciado. Na abertura e no encerramento, use se quiser.
+4. Amplie os textos e confira uma captura de teste. Use a tabela ampliada na etapa 5. Se possível, grave em 1080p; resolução maior é uma melhoria de legibilidade, não uma exigência do enunciado.
+5. Leia somente o bloco “Sua fala”. Os passos e lembretes servem para orientar você e não precisam ser narrados.
+6. As quebras de parágrafo sugerem pequenas pausas. Use a fala como apoio e mantenha seu jeito de explicar; não precisa decorar nem acrescentar “né” ou “é” a cada frase.
+7. Para os nomes, mantenha “YOLO vê três” e “YOLO vê cinco”. Leia CNN como “sê-ene-ene”. O glossário nas dúvidas tem os outros termos.
+8. Toque nos botões na ordem indicada. Os materiais externos abrem em outra aba; volte a esta aba para continuar a leitura.
+9. O notebook público já tem as saídas salvas. Os links do Colab apontam para células específicas; se ele abrir no início, use o índice e o nome da seção indicado.
+10. Faça um ensaio com cronômetro. A meta é 4min30s, com margem de 30 segundos até o limite de 5 minutos. Os horários são metas, não a duração já medida da sua fala. Não espere o intervalo terminar para avançar.
+11. Teste o áudio por dez segundos e confira a legibilidade das tabelas. Avance com calma e mantenha as notificações fechadas.
 
 ## 1. 00:00–00:20 — Apresentação
 
@@ -26,9 +29,7 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Olá, meu nome é Matheus Silva Riscado, RM573622. Esse é meu projeto individual da Fase 6.
->
-> A ideia é mostrar, para um cliente da FarmTech Solutions, como reconhecer e localizar garrafas e bananas em imagens, comparando três abordagens de visão computacional.
+> Olá, sou Matheus Silva Riscado, RM573622. Neste projeto individual da Fase 6, comparei três abordagens para reconhecer garrafas e bananas, demonstrando visão computacional para um cliente da FarmTech Solutions.
 
 **O que precisa ficar claro:** Nome correto: Matheus Silva Riscado · RM573622. Projeto individual.
 
@@ -50,9 +51,9 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Eu organizei 80 fotos reais: 40 de garrafas e 40 de bananas. Para cada classe, separei 32 para treino, quatro para validação e quatro para teste.
+> Organizei 80 fotos: 40 de garrafas e 40 de bananas. Por classe, são 32 para treino, quatro para validação e quatro para teste.
 >
-> Como vocês podem ver aqui, as imagens e os rótulos estão organizados no Drive. As caixas foram revisadas no Make Sense AI, totalizando 173 anotações. Também conferi duplicatas e a separação dos grupos, para reduzir o risco de vazamento entre os conjuntos.
+> As imagens e os rótulos estão no Drive. Revisei 173 caixas no Make Sense AI e conferi duplicatas e grupos, para reduzir o risco de vazamento entre os conjuntos.
 
 **O que precisa ficar claro:** 173 é a quantidade de caixas anotadas. Uma penca ou cacho conectado pode receber uma única caixa.
 
@@ -82,15 +83,15 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> No YOLOv5, fiz dois treinos independentes: um de 30 e outro de 60 épocas, com os mesmos pesos iniciais e parâmetros principais. Cada época é uma passagem pelos dados de treino.
+> Treinei o YOLOv5 por 30 e 60 épocas, em experimentos independentes, com os mesmos pesos iniciais e parâmetros principais.
 >
-> Aqui comparei as curvas de perda e a qualidade das detecções. A mAP de validação passou de 0,386 para 0,427. Já o tempo de treino passou de 202 para 341 segundos.
+> Comparei as curvas de perda e a mAP de validação, que passou de 0,386 para 0,427. O treino em GPU levou 202 e 341 segundos.
 >
-> Pela validação, escolhi 60 épocas antes de olhar o teste. No teste, porém, 30 épocas teve maior mAP. Então, treinar mais não garantiu um resultado melhor em imagens novas.
+> Escolhi 60 épocas pela validação, antes de olhar o teste. No teste, 30 épocas teve maior mAP. Neste experimento, treinar mais não garantiu melhor detecção nas imagens de teste.
 
 **O que precisa ficar claro:** 60 épocas não continua o treino de 30. Os dois começam nos mesmos pesos pré-treinados.
 
-**Lembrete:** Leia mAP como “éme-á-pê”. Ela avalia detecção e localização; não diga que 0,4267 significa 42,67% das imagens acertadas.
+**Lembrete:** Leia mAP como “ême-á-pê”. A conclusão vale para este experimento: não diga que treinar mais nunca ajuda. A mAP avalia detecção e localização; 0,4267 não significa 42,67% das imagens acertadas. Não deixe a câmera cobrir o gráfico.
 
 **Links de apoio — use se precisar:**
 
@@ -105,18 +106,19 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **O que mostrar:**
 
-1. No painel completo, comece pelas três garrafas de vidro: primeira imagem da linha inferior.
-2. Aponte a falha na banana solta sobre tecido: primeira imagem da linha superior.
-3. Aponte o cacho na árvore: terceira imagem da linha superior. A caixa cobre só parte do alvo.
-4. Use as ampliações abaixo se precisar mostrar melhor um detalhe.
+1. Oculte a câmera ou coloque-a fora do conteúdo. No vídeo anterior, ela cobriu as garrafas de vidro no canto inferior esquerdo.
+2. No painel completo, aponte com o cursor as três garrafas de vidro: primeira imagem da linha inferior.
+3. Aponte a falha na banana solta sobre tecido: primeira imagem da linha superior.
+4. Aponte o cacho na árvore: terceira imagem da linha superior. A caixa cobre só parte do alvo.
+5. Use as ampliações abaixo se precisar mostrar melhor um detalhe.
 
 **Sua fala:**
 
-> Aqui estão os resultados do modelo escolhido nas oito imagens de teste. Nessas garrafas de vidro, ele encontrou os objetos e desenhou as caixas.
+> Aqui estão as oito imagens de teste. O modelo encontrou essas garrafas e desenhou as caixas.
 >
-> Já nessa banana sobre o tecido, não houve detecção acima do limite de confiança definido. E nesse cacho, a caixa cobriu só parte do alvo.
+> Nessa banana sobre tecido, não houve detecção acima do limite de confiança. Nesse cacho, a caixa cobriu só parte do alvo.
 >
-> Ou seja, o modelo reconhecer a classe não significa que localizou o objeto corretamente. Por isso, mostrei os acertos e também as falhas.
+> Reconhecer a classe e localizar corretamente são coisas diferentes. Por isso, mostrei acertos e falhas.
 
 **O que precisa ficar claro:** As caixas laranja são previsões do modelo. As caixas revisadas para treino são anotações de referência: são etapas diferentes.
 
@@ -133,22 +135,23 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 ## 5. 02:20–03:15 — Comparação dos modelos
 
-**Abra nesta ordem:** [Abrir tabela de resultados](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-028) → [Abrir comparação em CSV](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/comparacao_final.csv)
+**Abra nesta ordem:** [Abrir tabela ampliada para o vídeo](https://teteuriscado-bot.github.io/MatheusSilvaRiscado/comparacao-video.html) → [Abrir tabela original no notebook](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-028)
 
 **O que mostrar:**
 
 1. Mostre a coluna de acertos: YOLOv3 = 7; YOLOv5 60 = 6; YOLOv5 30 = 5; CNN = 5, sempre de oito imagens.
 2. Depois, mostre a mediana de inferência em CPU: aproximadamente 1 segundo, 180 ms e 24 ms.
 3. Diga que a CNN classifica a imagem inteira; YOLO também localiza com caixas.
-4. Não leia todas as colunas. A fala já seleciona o que importa.
+4. A tabela ampliada usa os mesmos CSVs originais. Mantenha o notebook aberto para mostrar a origem, se necessário.
+5. Não deixe colunas ocultas por reticências. Aponte cada linha enquanto fala.
 
 **Sua fala:**
 
-> Agora, comparei os modelos nas mesmas oito imagens. O YOLOv3 acertou a classe em sete. O YOLOv5 de 60 épocas acertou em seis. O de 30 épocas e a CNN acertaram em cinco. Quando não houve detecção, contei como erro. Esses acertos são de classe, não da qualidade das caixas.
+> Nas mesmas oito imagens, o YOLOv3 acertou a classe em sete; o YOLOv5 de 60 épocas, em seis; o de 30 épocas e a CNN, em cinco.
 >
-> Também medi o tempo de inferência, que é o tempo para fazer a previsão. Todos foram avaliados em CPU. As medianas foram cerca de um segundo para o YOLOv3, 180 milissegundos para o YOLOv5 de 60 épocas e 24 milissegundos para a CNN.
+> Se o modelo não detectou o objeto, contei como erro. Esses acertos avaliam a classe, não a qualidade das caixas.
 >
-> A CNN foi treinada do zero em cerca de dez segundos. Ela classifica a imagem, mas não localiza os objetos.
+> Na inferência em CPU, as medianas foram cerca de um segundo para o YOLOv3, 180 milissegundos para o YOLOv5 de 60 épocas e 24 para a CNN. Ela foi treinada do zero em dez segundos, em CPU, e apenas classifica a imagem.
 
 **O que precisa ficar claro:** Sem detecção entra como erro. Esses acertos são de classe por imagem e não significam que todas as caixas estejam corretas.
 
@@ -156,12 +159,13 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Links de apoio — use se precisar:**
 
+- [Comparação original em CSV](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/comparacao_final.csv)
 - [Discussão e tabelas explicadas](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-029)
 - [CNN do zero: arquitetura e treino](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-015)
 - [YOLOv3: implementação](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-017)
 - [Matrizes de confusão](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/matrizes_confusao_teste.png)
 
-## 6. 03:15–04:15 — Conclusões e limitações
+## 6. 03:15–04:10 — Conclusões e limitações
 
 **Abra nesta ordem:** [Abrir curvas da CNN](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/cnn_curvas.png) → [Abrir discussão e conclusões](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb#scrollTo=fase6-029)
 
@@ -174,13 +178,11 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Para colocar cada solução para funcionar, o YOLOv5 exigiu rotulação e treino. Já o YOLOv3 usou pesos prontos com OpenCV, sem treino local. Na CNN, defini e treinei a rede com TensorFlow.
+> Na integração, o YOLOv5 exigiu rotulação e treino. O YOLOv3 usou pesos prontos com OpenCV, sem treino local. Na CNN, defini e treinei a rede no TensorFlow.
 >
-> A CNN apresentou sobreajuste: a perda no treino caiu, mas na validação aumentou. A parada antecipada encerrou o treino e recuperou os melhores pesos de validação.
+> A CNN apresentou sobreajuste: a perda de treino caiu e a de validação subiu. A parada antecipada recuperou os melhores pesos de validação.
 >
-> Para continuar o protótipo de localização, mantive o YOLOv5 de 60 épocas, escolhido pela validação. O YOLOv3 segue como referência, porque acertou mais classes nesse teste.
->
-> Mas são só oito imagens de teste. Antes de usar em produção, é preciso ampliar a base e avaliar novas condições.
+> Mantive o YOLOv5 de 60 épocas para continuar o protótipo de localização. O YOLOv3 segue como referência pelos acertos. Como são só oito imagens de teste, é preciso ampliar a base e avaliar novas condições antes de usar em produção.
 
 **O que precisa ficar claro:** No teste, 30 épocas teve maior mAP de localização e 60 épocas teve mais acertos de classe. São critérios diferentes; isso não é uma contradição.
 
@@ -192,7 +194,7 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 - [Configuração executada da CNN](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/cnn_configuracao.json)
 - [Critério registrado de seleção](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/selecao_validacao.json)
 
-## 7. 04:15–04:40 — Reprodução e encerramento
+## 7. 04:10–04:30 — Reprodução e encerramento
 
 **Abra nesta ordem:** [Abrir README no GitHub](https://github.com/teteuriscado-bot/MatheusSilvaRiscado#readme) → [Abrir evidência da sessão limpa](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/tree/main/evidencias/reexecucao-20261006)
 
@@ -204,9 +206,7 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 
 **Sua fala:**
 
-> Por fim, o repositório reúne o notebook executado, os dados, os modelos e os resultados. Também fiz uma segunda execução completa em sessão limpa: as 15 células de código terminaram sem erro.
->
-> As métricas variaram, e isso ficou registrado separadamente. O projeto mostra o funcionamento da solução, seus limites e os próximos passos. Obrigado.
+> O GitHub reúne o notebook, os dados, os modelos e os resultados. Na segunda execução em sessão limpa, as 15 células terminaram sem erro. A variação das métricas está documentada. Obrigado.
 
 **O que precisa ficar claro:** Os números apresentados até aqui são de 04/10/2026. A rodada de 06/10 confirma execução e registra a variação separadamente.
 
@@ -221,6 +221,18 @@ Matheus Silva Riscado · RM573622 · individual. Meta: **4min40s**, limite: **5 
 - [Checklist de avaliação](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/docs/CHECKLIST-BAREMA.md)
 
 ## Dúvidas para o ensaio
+
+**A observação sobre os labels da CNN exige refazer as caixas?**
+
+Não neste projeto. O notebook transforma a classe das anotações em um rótulo por imagem: 0 para garrafa e 1 para banana. A CNN recebe a imagem inteira e esse rótulo; não usa as coordenadas das caixas como alvo. Isso foi conferido no manifesto e na função de carregamento da CNN.
+
+**A frase sobre treinar mais estava errada?**
+
+Não. Na gravação, você disse que treinar mais não garantiu resultado melhor em novas imagens, depois de comparar validação e teste. A revisão acrescenta “neste experimento” e especifica detecção. Mais épocas pode ajudar em outros cenários; aqui, a mAP de teste foi maior com 30 épocas.
+
+**Qual trecho merece uma fala mais clara?**
+
+Na gravação, a frase sobre ausência de detecção ficou ambígua na transcrição automática. Isso não comprova erro conceitual, mas vale dizer com clareza: “Se o modelo não detectou o objeto, contei como erro.” O código trata ausência de detecção como erro na comparação por imagem.
 
 **Como leio os nomes dos modelos?**
 
