@@ -4,7 +4,7 @@
 
 Protótipo didático para reconhecer garrafas e bananas em imagens e comparar YOLOv5 customizado, YOLOv3 pré-treinado e uma CNN treinada do zero.
 
-**Estado em 06/10/2026: modelos executados e segunda execução integral em sessão limpa aprovada. Vídeo e envio pelo portal pendentes.**
+**Estado em 12/10/2026: modelos executados, segunda execução integral em sessão limpa aprovada e vídeo demonstrativo publicado como não listado no YouTube. Envio pelo portal pendente.**
 
 A [validação dos rótulos](docs/VERIFICACAO-ROTULOS.json) registra os dados reais. A [verificação da execução](docs/VERIFICACAO-EXECUCAO.json) documenta as 15 células executadas, sem saídas de erro, e os hashes dos 96 artefatos recuperados do Drive. O [checklist do barema](docs/CHECKLIST-BAREMA.md) acompanha os cinco critérios.
 
@@ -16,7 +16,7 @@ Procedência e créditos: [manifesto das 80 imagens](dataset/fontes.csv), [garra
 
 - [Notebook executado do projeto](MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb): método, código, resultados e discussão.
 - **[Abrir no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb)**: versão pública obtida deste repositório.
-- Vídeo no YouTube: **PENDENTE — incluir vídeo não listado de até 5 minutos.**
+- **[Assistir ao vídeo demonstrativo no YouTube](https://youtu.be/zm5nAksnAlU)**: não listado, aproximadamente 4min30s, com a demonstração das duas entregas e a comparação dos resultados.
 - [Dataset para reprodução — ZIP](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip): 80 fotografias, rótulos, créditos e manifesto.
 - [Instruções de reprodução](docs/REPRODUCAO.md): executar em outra conta sem acessar o Drive do autor.
 - [Resultados da execução](resultados/20261004T164740010266Z/): CSVs, curvas e oito imagens de teste.
