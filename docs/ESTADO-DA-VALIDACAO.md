@@ -1,9 +1,9 @@
-# Estado da validação — 06/10/2026
+# Estado da validação — atualizado em 12/10/2026
 
 ## Verificado localmente
 
 - Notebook com 32 células, incluindo 15 células de código Python.
-- Estrutura JSON básica, identificadores únicos e sintaxe Python de todas as células. A versão final preserva os códigos, contadores e saídas reais da exportação executada, com reincorporação de dois PNGs originais documentada abaixo.
+- Estrutura JSON básica, identificadores únicos e sintaxe Python de todas as células. A versão atual preserva os cálculos, contadores e saídas reais da exportação executada, com reincorporação de dois PNGs originais documentada abaixo. Em 12/10, apenas os padrões de acesso aos dados e a documentação foram atualizados para facilitar a reprodução pública.
 - Auditor de dataset exercitado com imagens artificiais criadas **somente como fixtures de teste de código**, fora da pasta do projeto.
 - Aceitação de uma fixture estrutural com 32/4/4 imagens por classe.
 - Rejeição de seis falhas introduzidas deliberadamente: imagem duplicada, grupo de captura atravessando conjuntos, caixa fora da imagem, divergência entre classe e procedência, rótulo vazio e contagem insuficiente.
@@ -39,14 +39,19 @@ Os originais foram preservados. Fotos públicas podem ter integrado o pré-trein
 - As 15 células de código possuem contadores de execução e não contêm saídas de erro na exportação final. A sessão teve retomadas para autorização do Drive e correção do download; não foi uma segunda execução integral em sessão limpa.
 - 96 artefatos recuperados do Drive, totalizando 84.013.913 bytes, incluindo gráficos, CSVs, oito imagens de teste e pesos. Inventário e hashes em `VERIFICACAO-EXECUCAO.json`.
 - Curvas de treino, matriz de confusão e painel completo de teste inspecionados. A discussão explica as métricas, sobreajuste da CNN, falhas, latência e limitações de anotação/base.
-- Notebook original executado preservado em `evidencias/colab/notebook-executado-original.ipynb`. Na versão revisada, somente o markdown e os dois gráficos ausentes das células 24/26 foram atualizados; esses gráficos são os PNGs originais da execução, sem alteração. Códigos, contadores e demais saídas preservados.
+- Notebook original executado preservado localmente em `evidencias/colab/notebook-executado-original.ipynb`. Na revisão inicial, somente o markdown e os dois gráficos ausentes das células 24/26 foram atualizados; esses gráficos são os PNGs originais da execução, sem alteração. Na revisão de 12/10, a primeira célula passou a usar `USE_DRIVE=False` e o ZIP público, como na sessão limpa de 06/10. Os cálculos, contadores e saídas foram preservados.
 - Versão revisada enviada como nova versão do mesmo arquivo do Drive, mantendo o ID e as permissões existentes. Notebook final também salvo na raiz do projeto.
 
 ## Situação da entrega
 
 1. Segunda reprodução integral em sessão limpa concluída em 06/10/2026: 15 células sem erro, contadores 1–15, dados baixados do GitHub público. O download não requer acesso ao Drive; não foi usado login de outra pessoa. Evidências em `VERIFICACAO-SESSAO-LIMPA.json` e `evidencias/reexecucao-20261006/`.
 2. A publicação disponibiliza repositório, dados e pesos com créditos e um link público do Colab baseado no GitHub. A cópia de desenvolvimento no Drive mantém as permissões do autor.
-3. Gravar vídeo não listado de até 5 minutos, incluir seu link no README e testar os acessos do avaliador.
-4. Conferir horário-limite no portal, enviar antes de 13/10/2026 e não fazer commits após o envio final.
+3. [Vídeo corrigido](https://youtu.be/zm5nAksnAlU) publicado em 12/10 como não listado, com aproximadamente 4min30s e reprodução em 720p conferida; link incluído no README.
+4. Notebook principal já configurado para download público do dataset, sem acesso ao Drive do autor. As saídas preservadas continuam sendo da rodada de 04/10; a rodada de 06/10 comprova o funcionamento do mesmo código com a configuração pública.
+5. Pendente: enviar o link do repositório pelo portal até **13/10/2026, às 23h59**, e não fazer commits após o envio final.
 
 A estrutura dos três notebooks (principal, exportação original da sessão limpa e cópia revisada) foi validada também pelo validador oficial nbformat 5.11.1. A sintaxe foi conferida com AST. Os modelos foram executados efetivamente no Colab, conforme as saídas preservadas. Execução técnica concluída não equivale à entrega acadêmica completa.
+
+## Conferência da revisão de 12/10/2026
+
+O [registro da revisão final](VERIFICACAO-REVISAO-FINAL.json) documenta a validação do notebook atualizado, a preservação integral das saídas e dos contadores e a equivalência do código Python com as 15 células executadas na sessão limpa de 06/10. Em 12/10, o download público e o auditor de dados foram executados novamente: 80 imagens, 173 caixas e a mesma divisão 32/4/4 por classe, com hash idêntico ao pacote original. Os treinos completos não foram repetidos nesta revisão; as métricas publicadas continuam vinculadas às rodadas identificadas de 04/10 e 06/10.

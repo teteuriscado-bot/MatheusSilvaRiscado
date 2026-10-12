@@ -4,7 +4,7 @@ Registro das saídas reais lidas na interface do notebook e conferidas nos CSVs 
 
 - Autor: Matheus Silva Riscado, RM573622.
 - Execução: `20261004T164740010266Z`.
-- [Notebook executado](https://colab.research.google.com/drive/1-sFLeLbrjNCv6DkZIa4gj57npGw_rIHP). Permissões públicas ainda não verificadas.
+- [Notebook público com as saídas desta rodada](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb). A cópia original de desenvolvimento permanece no Drive do autor; ela não é necessária para avaliação ou reprodução.
 - Resultados no Drive: `Meu Drive/FarmTechFase6/resultados/20261004T164740010266Z`.
 - Ambiente observado: Python 3.13.15, PyTorch 2.11.0+cu130, Tesla T4; revisão YOLOv5 `2b1bdcd03663afe204bb614593f78be3facfbcaa`.
 - Auditoria do dataset aprovada no Colab: 32/4/4 imagens de cada classe.
@@ -47,6 +47,10 @@ O endereço antigo dos pesos YOLOv3 retornou HTTP 403. A [página oficial](https
 
 Os treinos, avaliações, medição de tempo e checagem final dos artefatos foram concluídos. O notebook original executado e os 96 arquivos de resultados foram recuperados do Drive e preservados localmente. As curvas, matrizes de confusão e todas as oito imagens do painel de teste foram inspecionadas; a discussão foi concluída com base nesses dados.
 
-A versão final mantém os códigos e contadores da exportação executada. Os dois gráficos das células 24 e 26, ausentes na exportação inicial, foram reincorporados a partir dos PNGs originais gravados por essas células, com origem e SHA-256 registrados. Nenhuma métrica ou saída numérica foi inventada. A cópia original está em `evidencias/colab/notebook-executado-original.ipynb`; a verificação e os hashes estão em `docs/VERIFICACAO-EXECUCAO.json`.
+A revisão inicial manteve os códigos e contadores da exportação executada. Os dois gráficos das células 24 e 26, ausentes na exportação inicial, foram reincorporados a partir dos PNGs originais gravados por essas células, com origem e SHA-256 registrados. Nenhuma métrica ou saída numérica foi inventada. A cópia original está preservada localmente em `evidencias/colab/notebook-executado-original.ipynb`; a verificação e os hashes estão em `VERIFICACAO-EXECUCAO.json`.
 
-As retomadas da sessão estão documentadas. Ainda falta uma segunda reprodução integral em sessão limpa, publicar os acessos para o avaliador, gravar o vídeo e enviar a entrega no portal.
+## Atualização da entrega — 12/10/2026
+
+A segunda reprodução integral foi concluída em 06/10, com as 15 células executadas sem erro; suas saídas estão separadas em [evidencias/reexecucao-20261006](../evidencias/reexecucao-20261006/README.md). Os números deste registro continuam sendo os de 04/10. O notebook principal passou a usar o acesso público ao dataset por padrão, preservando cálculos, contadores e saídas.
+
+O repositório, os dados, os pesos e o [vídeo não listado](https://youtu.be/zm5nAksnAlU) estão publicados. O vídeo tem aproximadamente 4min30s e está no README. Permanece pendente o envio pelo portal, até 13/10/2026 às 23h59, seguido do congelamento dos commits.

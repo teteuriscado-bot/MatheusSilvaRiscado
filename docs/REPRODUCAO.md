@@ -6,29 +6,29 @@ O notebook publicado já contém as saídas da execução `20261004T164740010266
 
 1. Abrir [o notebook público no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb) e salvar uma cópia no próprio Drive.
 2. Selecionar um ambiente Python com GPU, se disponível. A sessão original utilizou Tesla T4. A CNN e o benchmark comparativo de inferência usam CPU por definição do experimento.
-3. Na **primeira célula de código**, substituir somente estas duas configurações:
+3. Usar **Ambiente de execução → Executar tudo**. A primeira célula já contém estas configurações; não é preciso editá-las nem autorizar a montagem do Drive:
 
 ```python
 USE_DRIVE = False
 DATASET_ZIP_URL = "https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip"
 ```
 
-4. Executar as células em ordem. O auditor confere imagens, rótulos, classes, grupos e duplicatas antes do treino. O ZIP contém `images/`, `labels/`, `fontes.csv` e créditos diretamente na raiz.
+4. O dataset será baixado automaticamente. O auditor confere imagens, rótulos, classes, grupos e duplicatas antes do treino. O ZIP contém `images/`, `labels/`, `fontes.csv` e créditos diretamente na raiz.
 5. Aguardar os treinos independentes de 30 e 60 épocas, a CNN, as avaliações e o benchmark. Os resultados terão um novo identificador de execução; não sobrescrevem os resultados publicados.
 6. Ao final, baixar o ZIP solicitado pela última célula e salvar também o notebook com as saídas. Com `USE_DRIVE=False`, os arquivos ficam no disco temporário do Colab e devem ser baixados antes do encerramento da sessão.
 
-O notebook preserva as configurações da execução original, que usou `USE_DRIVE=True` e os dados já presentes no Drive. As duas alterações acima são instruções para reproduzir em outra conta; não alteram os splits ou os hiperparâmetros do experimento.
+As saídas, os contadores e a discussão do notebook principal continuam correspondendo à execução de 04/10, que usou os dados no Drive. Em 12/10, os dois padrões de acesso aos dados foram atualizados para os valores acima, já usados na execução integral de 06/10. Os cálculos, os splits e os hiperparâmetros foram preservados. A mudança de configuração não representa um terceiro treinamento; uma nova execução produzirá seu próprio identificador e poderá apresentar variação nas métricas.
 
 ## Alternativa: usar o próprio Google Drive
 
-Baixar [o dataset](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip), extrair e copiar o conteúdo para `Meu Drive/FarmTechFase6/dataset/`. Manter `USE_DRIVE=True` e `DATASET_ZIP_URL=""`. Autorizar a montagem do próprio Drive quando o Colab solicitar. Não criar um nível adicional `dataset/dataset`.
+Baixar [o dataset](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip), extrair e copiar o conteúdo para `Meu Drive/FarmTechFase6/dataset/`. Alterar a primeira célula para `USE_DRIVE=True` e `DATASET_ZIP_URL=""`. Autorizar a montagem do próprio Drive quando o Colab solicitar. Não criar um nível adicional `dataset/dataset`.
 
 ## Arquivos para download
 
 Na [versão publicada](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/tag/fase6-2026-10-04):
 
 - `DATASET-FARMTECH-FASE6.zip`: 80 fotografias e rótulos, manifesto, créditos e protocolo.
-- `RESULTADOS-FARMTECH-20261004T164740010266Z.zip`: todos os 96 artefatos originais, notebook revisado e registros de evidência. Contém `best.pt` e `last.pt` de cada experimento, a CNN, métricas e imagens.
+- `RESULTADOS-FARMTECH-20261004T164740010266Z.zip`: todos os 96 artefatos originais, a cópia do notebook revisado daquela publicação e os registros de evidência. Contém `best.pt` e `last.pt` de cada experimento, a CNN, métricas e imagens. Para iniciar uma reprodução com a configuração pública atual, usar o notebook da raiz do repositório.
 - `yolov5s_30_best.pt`, `yolov5s_60_best.pt` e `cnn_do_zero.keras`: checkpoints separados para conveniência. Os nomes originais e seus hashes constam no inventário da execução.
 - `SHA256SUMS.txt`: hashes dos downloads. No PowerShell, usar `Get-FileHash -Algorithm SHA256 -LiteralPath 'caminho-do-arquivo'` para conferir.
 

@@ -1,11 +1,18 @@
-# Fase 6 — plano de entrega
+# Fase 6 — guia de leitura e entrega
 
 **Matheus Silva Riscado · RM573622 · individual**  
-**Prazo informado: 13/10/2026. Meta de conclusão: 12/10/2026.**
+**Atualizado em 12/10/2026 · prazo confirmado no portal: 13/10/2026, às 23h59.**
 
-As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. A publicação inicial está em `teteuriscado-bot/MatheusSilvaRiscado`. A segunda reprodução integral em sessão limpa foi concluída em 06/10/2026. Ainda faltam o vídeo, seu link no README e o envio no portal. A entrega acadêmica ainda não está completa.
+As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. A segunda reprodução integral em sessão limpa foi concluída em 06/10/2026. O vídeo corrigido foi publicado como não listado e incluído no README. **Resta enviar o link do repositório pelo portal.**
 
-## O que vamos construir
+## Começar a avaliação
+
+1. Ler o [notebook executado](MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb), que reúne método, código, saídas e conclusões.
+2. Assistir ao [vídeo demonstrativo](https://youtu.be/zm5nAksnAlU), não listado, com aproximadamente 4min30s.
+3. Para reproduzir, abrir uma cópia [no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb), selecionar GPU quando disponível e executar tudo. O dataset público já está configurado; não é necessário montar o Drive nem editar caminhos. Ver [reprodução e preservação dos resultados](docs/REPRODUCAO.md).
+4. Consultar o [checklist do barema](docs/CHECKLIST-BAREMA.md) e a [evidência da sessão limpa](evidencias/reexecucao-20261006/README.md), caso queira conferir a execução independente.
+
+## Solução entregue
 
 Uma demonstração da FarmTech Solutions que localiza dois tipos de objeto em imagens e compara três abordagens: YOLOv5 customizado, YOLOv3 pré-treinado e uma CNN de classificação treinada do zero.
 
@@ -23,7 +30,7 @@ O capítulo 03 da Fase 6 ensina o YOLOv5 customizado. O capítulo 10, no exemplo
 
 O ZIP do autor trouxe 17 fotos: 14 compõem o treino e três, com banana e garrafas juntas, ficam em `coleta/garrafas/extras_duas_classes/`. As 26 garrafas complementares e as 40 bananas vieram do Wikimedia Commons, com créditos registrados. As três fotos extras compartilham a sessão do treino e não são um teste independente.
 
-As folhas `CONTATO-01.jpg` e `CONTATO-02.jpg`, em cada pasta de `coleta`, mostram a seleção. A rotulação seguiu o [protocolo](docs/PROTOCOLO-ROTULACAO.md); o dataset já foi copiado para o Drive e usado no Colab. A lista abaixo registra os critérios usados na coleta e orienta novos experimentos, sem alterar retroativamente os conjuntos da execução concluída.
+As folhas locais `CONTATO-01.jpg` e `CONTATO-02.jpg`, em cada pasta de `coleta`, registram a seleção. As imagens e os rótulos finais estão publicados em `dataset/`. A rotulação seguiu o [protocolo](docs/PROTOCOLO-ROTULACAO.md); o dataset foi organizado no Drive e usado no Colab. A lista abaixo registra os critérios usados na coleta e orienta novos experimentos, sem alterar retroativamente os conjuntos da execução concluída.
 
 1. Fotografar objetos reais, em imagens diferentes; não contar cópias, recortes ou aumentos artificiais como novas fotos.
 2. Variar iluminação, distância, orientação, tamanho aparente e fundo. Fotografar ambas as classes em fundos variados para evitar que a rede aprenda apenas o cenário.
@@ -36,7 +43,7 @@ Uma forma prática de obter 40 imagens por classe é fazer 10 grupos de 4 fotos:
 
 ## Rotulação no Make Sense AI
 
-Para facilitar, `coleta/IMAGENS-PARA-ROTULAR.zip` reúne as 80 fotos em uma pasta, a ordem das classes, os créditos e o manifesto com a divisão. Extrair o ZIP antes de selecionar as imagens no site. Esse pacote ainda não contém anotações e não substitui o dataset final de treinamento.
+Na preparação local, `coleta/IMAGENS-PARA-ROTULAR.zip` reuniu as 80 fotos, a ordem das classes, os créditos e o manifesto. A lista abaixo registra o procedimento seguido. Para reproduzir os experimentos, usar diretamente o [dataset final com anotações](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip).
 
 1. Abrir [Make Sense AI](https://www.makesense.ai/), carregar as fotos e selecionar detecção de objetos.
 2. Criar as classes nesta ordem: `garrafa`, depois `banana`.
@@ -47,9 +54,9 @@ Para facilitar, `coleta/IMAGENS-PARA-ROTULAR.zip` reúne as 80 fotos em uma past
 
 O formato é `classe x_centro y_centro largura altura`, com coordenadas normalizadas entre 0 e 1. Não usar coordenadas em pixels. O arquivo de nomes de classes eventualmente exportado pela ferramenta não é uma anotação de imagem.
 
-## Organização no Google Drive
+## Organização original no Google Drive
 
-Copiar a pasta `dataset` preenchida para `Meu Drive/FarmTechFase6/dataset/`:
+A sessão original utilizou a pasta `Meu Drive/FarmTechFase6/dataset/` com esta estrutura:
 
 ```text
 FarmTechFase6/
@@ -65,13 +72,13 @@ FarmTechFase6/
       test/      # 8 arquivos TXT
 ```
 
-O Colab copiará os dados para o disco temporário da sessão, para acelerar a leitura, e salvará os resultados no Drive. O professor deve conseguir obter os dados por um link de download autorizado, sem depender de acesso ao seu Drive pessoal. Preparar um ZIP público somente com os dados permitidos e configurar `DATASET_ZIP_URL` no notebook; manter também a organização no seu Drive exigida pelo enunciado.
+A organização original no Drive foi preservada. A configuração pública atual baixa o ZIP para o disco temporário do Colab e salva ali os novos resultados, sem acessar o Drive do autor. A última célula oferece o ZIP para download. O [guia de reprodução](docs/REPRODUCAO.md) documenta também a alternativa com o próprio Drive.
 
 ## Notebook
 
 Arquivo: `MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb`.
 
-Abrir [o notebook executado no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb). A versão local também contém os resultados e a análise revisada. Para reproduzir, preparar os dados no próprio Drive, selecionar GPU quando disponível e executar as células em ordem. A sessão de 04/10 confirmou o funcionamento com Python 3.13.15, PyTorch 2.11.0+cu130 e TensorFlow 2.20.0; houve retomadas para autorização do Drive e correção do download dos pesos. A segunda execução integral em sessão limpa foi concluída em 06/10/2026, sem erro nas 15 células; consultar `evidencias/reexecucao-20261006/`.
+Abrir [o notebook executado no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb). A versão publicada contém os resultados e a análise de 04/10. Para reproduzir, salvar uma cópia na própria conta, selecionar GPU quando disponível e executar tudo; o download público já está configurado. A sessão de 04/10 confirmou o funcionamento com Python 3.13.15, PyTorch 2.11.0+cu130 e TensorFlow 2.20.0; houve retomadas para autorização do Drive e correção do download dos pesos. A segunda execução integral em sessão limpa foi concluída em 06/10/2026, sem erro nas 15 células; consultar `evidencias/reexecucao-20261006/`.
 
 O experimento usa 30 e 60 épocas, iniciando ambos os treinos dos mesmos pesos pré-treinados. A seleção ocorre pela validação. Os testes ficam reservados para a avaliação final. A CNN começa com pesos aleatórios; não é uma rede pré-treinada disfarçada de CNN “do zero”.
 
@@ -91,22 +98,19 @@ A versão portátil `DATASET-FARMTECH-FASE6.zip` contém os arquivos de `dataset
 
 O [checklist por critério](docs/CHECKLIST-BAREMA.md) registra o estado e as evidências ainda necessárias. As **Entregas 1 e 2 são obrigatórias**, conforme o barema. Os desafios “Ir Além” não aumentam a nota acadêmica. Só trabalhar neles depois de concluir os itens acima.
 
-## Cronograma sugerido
+## Etapas concluídas e envio
 
-As etapas de coleta, rotulação, treino e análise foram antecipadas e concluídas em 03–04/10. As datas abaixo são a referência inicial; publicação, vídeo e conferência da entrega ainda precisam ser concluídos.
+As datas abaixo registram a execução do projeto. O envio acadêmico permanece pendente.
 
-| Data | Resultado esperado |
+| Data | Etapa |
 |---|---|
-| 03–04/10 | Confirmar objetos, coletar as imagens e registrar as fontes |
-| 05–06/10 | Rotular, separar os conjuntos, revisar caixas e conferir contagens |
-| 07–08/10 | Executar YOLOv5 com 30 e 60 épocas, YOLOv3 e CNN |
-| 09/10 | Conferir métricas, investigar erros e escrever a análise |
-| 10/10 | Revisar README, notebook, dados e links do repositório |
-| 11/10 | Gravar e publicar o vídeo não listado |
-| 12/10 | Testar links, revisar o vídeo e concluir a entrega |
-| 13/10 | Prazo informado; conferir o horário exato no portal |
+| 03–04/10 | Coleta, rotulação, auditoria, treinos e preservação dos resultados |
+| 06/10 | Segunda execução integral em sessão limpa, sem erros nas 15 células |
+| 09–12/10 | Revisão e gravação da apresentação |
+| 12/10 | Vídeo corrigido publicado, README atualizado e acesso público ao dataset configurado por padrão |
+| Até 13/10, às 23h59 | Enviar o link do repositório pelo portal e preservar o comprovante — pendente |
 
-Depois do envio final, não realizar novos commits, conforme a orientação do enunciado. Não há monitoramento ou lembrete automático configurado por este cronograma.
+Depois do envio final, não realizar novos commits, conforme a orientação do enunciado.
 
 ## Checklist final
 
@@ -123,8 +127,9 @@ Depois do envio final, não realizar novos commits, conforme a orientação do e
 - [x] Notebook com todas as células executadas e saídas preservadas.
 - [x] Segunda reprodução do início ao fim em sessão limpa em 06/10/2026: 15 células sem erro nem intervenções.
 - [x] Dados baixados por URL pública e reprodução integral testada em 06/10/2026.
-- [ ] README sem links pendentes.
-- [ ] Vídeo não listado de até 5 minutos, demonstrando uma execução real.
+- [x] README com links para notebook, Colab, dados, resultados e vídeo.
+- [x] Vídeo não listado de aproximadamente 4min30s, demonstrando os resultados reais.
+- [x] Notebook com download público do dataset configurado por padrão.
 - [x] Repositório público com notebook, dados e resultados.
 - [ ] Link enviado no portal antes do prazo.
 - [ ] Nenhum commit posterior ao envio final.
@@ -141,4 +146,4 @@ Materiais FIAP consultados: PDFs dos capítulos 03, 09 e 10 disponíveis localme
 
 ## Verificação concluída em 06/10/2026
 
-A segunda execução em sessão limpa terminou: 15 células em ordem, sem erro, com download público do dataset. As evidências estão em `evidencias/reexecucao-20261006/`. O notebook principal e o roteiro do vídeo continuam vinculados à rodada original de 04/10; não misturar métricas das duas rodadas. Restam o vídeo, seu link no README e o envio pelo portal.
+A segunda execução em sessão limpa terminou: 15 células em ordem, sem erro, com download público do dataset. As evidências estão em `evidencias/reexecucao-20261006/`. O notebook principal e o vídeo continuam vinculados à rodada original de 04/10; as métricas das duas rodadas estão documentadas separadamente. O vídeo está publicado e incluído no README; resta o envio pelo portal.

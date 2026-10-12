@@ -18,14 +18,14 @@ Procedência e créditos: [manifesto das 80 imagens](dataset/fontes.csv), [garra
 - **[Abrir no Colab](https://colab.research.google.com/github/teteuriscado-bot/MatheusSilvaRiscado/blob/main/MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb)**: versão pública obtida deste repositório.
 - **[Assistir ao vídeo demonstrativo no YouTube](https://youtu.be/zm5nAksnAlU)**: não listado, aproximadamente 4min30s, com a demonstração das duas entregas e a comparação dos resultados.
 - [Dataset para reprodução — ZIP](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip): 80 fotografias, rótulos, créditos e manifesto.
-- [Instruções de reprodução](docs/REPRODUCAO.md): executar em outra conta sem acessar o Drive do autor.
+- [Instruções de reprodução](docs/REPRODUCAO.md): salvar uma cópia no Colab, selecionar GPU quando disponível e executar tudo. O download público do dataset já está configurado; não é necessário montar o Drive nem editar caminhos.
 - [Resultados da execução](resultados/20261004T164740010266Z/): CSVs, curvas e oito imagens de teste.
 - [Pesos e pacote completo de resultados](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/tag/fase6-2026-10-04): os 96 artefatos, modelos treinados e hashes para conferência.
 
 ![Detecções do YOLOv5 selecionado nas oito imagens de teste](resultados/20261004T164740010266Z/painel_teste.png)
 
-As instruções completas e a análise estão no notebook; o [guia de entrega](COMECE-AQUI.md) e o [roteiro do vídeo](docs/ROTEIRO-VIDEO.md) orientam os próximos passos. A sessão original teve retomadas para autorização do Drive e correção do download dos pesos; a segunda reprodução integral foi concluída em 06/10/2026, sem erros. A [evidência da sessão limpa](evidencias/reexecucao-20261006/README.md) registra código, saídas, hashes e diferenças entre as rodadas.
+As instruções completas e a análise estão no notebook; o [guia de leitura e entrega](COMECE-AQUI.md) reúne os acessos e a situação atual. A sessão original teve retomadas para autorização do Drive e correção do download dos pesos; a segunda reprodução integral foi concluída em 06/10/2026, sem erros. A [evidência da sessão limpa](evidencias/reexecucao-20261006/README.md) registra código, saídas, hashes e diferenças entre as rodadas.
 
 O experimento usa 64 imagens para treino, 8 para validação e 8 para teste. A base pequena serve a uma demonstração acadêmica e exige cautela na interpretação de generalização.
 
-Prazo informado: **13/10/2026**. Repositório individual `MatheusSilvaRiscado`; envio pelo portal pendente. Confirmar o horário-limite e não fazer commits após o envio final.
+Prazo confirmado no portal: **13/10/2026, às 23h59**. Repositório individual `MatheusSilvaRiscado`; envio pelo portal pendente. Não fazer commits após o envio final.

@@ -1,0 +1,51 @@
+{
+  "data": "2026-10-12",
+  "escopo": "Revisão da documentação e dos padrões de acesso aos dados; sem novo treinamento.",
+  "notebook": "MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb",
+  "notebook_sha256": "4666d23c6277ca165c75b6ebc317cea099b0a9e577b3c21ea107dac2b49e4b14",
+  "backup_anterior_sha256": "7660b7664f1e9860a0d10a79d215d7d20567757e145960ad685b6b7d85f3860a",
+  "nbformat": "5.11.1",
+  "formato_valido": true,
+  "celulas": 32,
+  "celulas_codigo": 15,
+  "saidas_e_contadores_preservados": true,
+  "celulas_codigo_com_erro": 0,
+  "codigo_ast_identico_a_sessao_limpa_0610": true,
+  "configuracao_padrao": {
+    "CLASSES": [
+      "garrafa",
+      "banana"
+    ],
+    "USE_DRIVE": false,
+    "DATASET_ZIP_URL": "https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/DATASET-FARMTECH-FASE6.zip"
+  },
+  "download_publico_e_auditor_executados_em_1210": true,
+  "dataset_sha256": "f1f893f1d2b219f20f9c180c523bf71c26ab6de82bd957be160cd631a92302a4",
+  "dataset_igual_ao_pacote_original": true,
+  "imagens": 80,
+  "caixas": 173,
+  "contagens": {
+    "test": {
+      "banana": 4,
+      "garrafa": 4
+    },
+    "train": {
+      "banana": 32,
+      "garrafa": 32
+    },
+    "val": {
+      "banana": 4,
+      "garrafa": 4
+    }
+  },
+  "links_locais_validos": 24,
+  "video": {
+    "url": "https://youtu.be/zm5nAksnAlU",
+    "visibilidade_conferida_na_publicacao": "nao_listado",
+    "duracao_segundos": 270.363
+  },
+  "execucao_integral": "Concluída no Colab em 06/10, com o mesmo código e a mesma configuração pública; não repetida em 12/10.",
+  "origem_saidas_notebook_principal": "20261004T164740010266Z",
+  "entrega_portal": "pendente",
+  "inspecao_visual": "Notebook renderizado em HTML com nbconvert; instruções de reprodução e configuração inicial inspecionadas no navegador. Saídas gráficas preservadas sem alteração."
+}
