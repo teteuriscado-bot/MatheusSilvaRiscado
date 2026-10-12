@@ -24,9 +24,9 @@ Abra estes links no computador, na ordem abaixo. No tablet, acompanhe a fala. As
 
 1. No computador que será gravado, abra este roteiro e use “Abrir as 11 telas em ordem”. No tablet, deixe o roteiro aberto para acompanhar a fala. Links tocados no tablet abrem no tablet, não no computador.
 2. Se o navegador bloquear várias abas, use “Abrir próxima tela” uma vez por tela ou os links numerados. Confira as 11 abas antes de gravar; o Drive pode pedir sua conta do projeto.
-3. Na gravação, siga as indicações entre aspas dentro da fala: “TROQUE” muda de tela; “CONTINUE” mantém a mesma. Essas indicações e os lembretes não são falados.
-4. A gravação analisada passou de cinco minutos. Esta versão foi encurtada, mas a duração só estará confirmada depois de ensaiar com as trocas de tela.
-5. Durante gráficos, tabelas e detecções, oculte a câmera ou posicione-a fora do conteúdo. O rosto não é exigido pelo enunciado. Na abertura e no encerramento, use se quiser.
+3. Amarelo significa trocar de tela: selecione a aba indicada. Os lembretes em azul-claro pedem um gesto, como apontar uma imagem ou uma coluna. Nenhuma dessas orientações faz parte da narração.
+4. Ensaie com as trocas de tela e confirme a duração da nova gravação: meta de 4min30s e limite de cinco minutos.
+5. Pode gravar somente a tela e sua voz. O enunciado não exige mostrar o rosto, e o barema não prevê pontos extras por câmera. Se quiser aparecer na abertura ou no encerramento, é opcional; mantenha as evidências desobstruídas.
 6. Amplie os textos e confira uma captura de teste. Use a tabela ampliada na etapa 5. Se possível, grave em 1080p; resolução maior é uma melhoria de legibilidade, não uma exigência do enunciado.
 7. Leia somente o bloco “Sua fala”. Os passos e lembretes servem para orientar você e não precisam ser narrados.
 8. As quebras de parágrafo sugerem pequenas pausas. Use a fala como apoio e mantenha seu jeito de explicar; não precisa decorar nem acrescentar “né” ou “é” a cada frase.
@@ -65,7 +65,7 @@ Siga as trocas abaixo. Tempo de referência opcional: 00:20–00:55.
 
 **“TROQUE PARA A [TELA 02 — Pastas no Google Drive](https://drive.google.com/drive/folders/1vtCE3Yxtwg4QInujzWFNeSr1az2zXsX6)”** — não ler em voz alta.
 
-Mostre as pastas train, val e test. Continue nesta tela até terminar a frase sobre o Drive.
+Mostre as pastas train, val e test.
 
 Sem acesso ao Drive? [Abra as pastas públicas nesta etapa](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/tree/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/dataset/images). Mostre essa cópia; os dados também estão no Drive.
 
@@ -110,16 +110,18 @@ Mostre a seção dos dois treinos no notebook.
 
 **“TROQUE PARA A [TELA 05 — Gráfico de 30 e 60 épocas](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/comparacao_epocas.png)”** — não ler em voz alta.
 
-Aponte as curvas dos dois experimentos. A câmera deve ficar fora do gráfico.
+Aponte as curvas dos dois experimentos.
 
 > Comparei as curvas de perda.
 
 **“TROQUE PARA A [TELA 06 — Tabela de validação, teste e treino](https://teteuriscado-bot.github.io/MatheusSilvaRiscado/comparacao-video.html#treinos)”** — não ler em voz alta.
 
-Mostre as colunas de validação, teste e tempo de treino. A aba já abre nesta tabela.
+Aponte a coluna de validação e, depois, os tempos de treino: 202,40 s e 341,11 s.
 
 > A mAP de validação passou de 0,386 para 0,427. O treino em GPU levou 202 e 341 segundos.
->
+
+**Gesto — não ler em voz alta:** Aponte a coluna de teste: 30 épocas teve maior mAP, com 0,5703 contra 0,5454.
+
 > Escolhi 60 épocas pela validação, antes de olhar o teste. No teste, 30 épocas teve maior mAP. Neste experimento, treinar mais não garantiu melhor detecção nas imagens de teste.
 
 **O que precisa ficar claro:** 60 épocas não continua o treino de 30. Os dois começam nos mesmos pesos pré-treinados.
@@ -143,15 +145,17 @@ Siga as trocas abaixo. Tempo de referência opcional: 01:40–02:20.
 
 **“TROQUE PARA A [TELA 07 — Oito imagens de teste](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/painel_teste.png)”** — não ler em voz alta.
 
-Oculte a câmera. Aponte as três garrafas de vidro: primeira imagem da linha de baixo.
+Aponte as três garrafas de vidro: primeira imagem da linha de baixo.
 
 > Aqui estão as oito imagens de teste. O modelo encontrou essas garrafas e desenhou as caixas.
 
-**“CONTINUE NA [TELA 07 — Oito imagens de teste](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/painel_teste.png)”** — não ler em voz alta.
+**Gesto — não ler em voz alta:** Aponte a banana no tecido: primeira imagem da linha de cima. Ela está sem caixa.
 
-Sem mudar de aba: aponte a banana no tecido, no alto à esquerda; depois, o cacho na terceira imagem de cima.
+> Nessa banana sobre tecido, não houve detecção acima do limite de confiança.
 
-> Nessa banana sobre tecido, não houve detecção acima do limite de confiança. Nesse cacho, a caixa cobriu só parte do alvo.
+**Gesto — não ler em voz alta:** Aponte o cacho na árvore: terceira imagem da linha de cima. Mostre a parte que ficou fora da caixa.
+
+> Nesse cacho, a caixa cobriu só parte do alvo.
 >
 > Reconhecer a classe e localizar corretamente são coisas diferentes. Por isso, mostrei acertos e falhas.
 
@@ -184,9 +188,7 @@ Aponte a coluna de acertos de cada modelo.
 >
 > Se o modelo não detectou o objeto, contei como erro. Esses acertos avaliam a classe, não a qualidade das caixas.
 
-**“CONTINUE NA [TELA 08 — Tabela de comparação dos modelos](https://teteuriscado-bot.github.io/MatheusSilvaRiscado/comparacao-video.html#comparacao)”** — não ler em voz alta.
-
-Sem mudar de aba: aponte agora a coluna de inferência em CPU.
+**Gesto — não ler em voz alta:** Aponte a coluna de inferência em CPU, acompanhando cada modelo enquanto fala o tempo.
 
 > Na inferência em CPU, as medianas foram cerca de um segundo para o YOLOv3, 180 milissegundos para o YOLOv5 de 60 épocas e 24 para a CNN. Ela foi treinada do zero em dez segundos, em CPU, e apenas classifica a imagem.
 
@@ -210,15 +212,13 @@ Siga as trocas abaixo. Tempo de referência opcional: 03:15–04:10.
 
 **Sua fala, com a tela no ponto certo:**
 
-**“CONTINUE NA [TELA 08 — Tabela de comparação dos modelos](https://teteuriscado-bot.github.io/MatheusSilvaRiscado/comparacao-video.html#comparacao)”** — não ler em voz alta.
-
-Mantenha a tabela da etapa anterior enquanto explica a integração.
+**Gesto — não ler em voz alta:** Aponte os nomes YOLOv5, YOLOv3 e CNN enquanto compara o trabalho de integração.
 
 > Na integração, o YOLOv5 exigiu rotulação e treino. O YOLOv3 usou pesos prontos com OpenCV, sem treino local. Na CNN, defini e treinei a rede no TensorFlow.
 
 **“TROQUE PARA A [TELA 09 — Curvas da CNN](https://raw.githubusercontent.com/teteuriscado-bot/MatheusSilvaRiscado/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/resultados/20261004T164740010266Z/cnn_curvas.png)”** — não ler em voz alta.
 
-Mostre a curva de perda de treino descendo e a de validação subindo. Continue nesta tela até terminar a conclusão.
+No gráfico de perda, aponte a curva de treino descendo e a de validação subindo.
 
 > A CNN apresentou sobreajuste: a perda de treino caiu e a de validação subiu. A parada antecipada recuperou os melhores pesos de validação.
 >
@@ -269,6 +269,14 @@ Mostre a evidência da segunda execução e encerre a gravação.
 - [Checklist de avaliação](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/blob/aa36b194fc8cc42f98099f350a9f562e5cd8db0a/docs/CHECKLIST-BAREMA.md)
 
 ## Dúvidas para o ensaio
+
+**Preciso aparecer na câmera?**
+
+Não. O enunciado e o barema pedem um vídeo de até cinco minutos que demonstre claramente a solução, publicado como não listado e com link no README. Não exigem mostrar o rosto nem preveem pontos extras por isso. Para esta apresentação, a recomendação é gravar a tela com sua voz, deixando imagens e resultados totalmente visíveis.
+
+**Como sigo os avisos do roteiro?**
+
+Amarelo é exclusivamente troca de tela e traz o link da próxima aba. Os lembretes em azul-claro indicam o que apontar com o cursor. Leia em voz alta apenas os parágrafos da apresentação.
 
 **A observação sobre os labels da CNN exige refazer as caixas?**
 
