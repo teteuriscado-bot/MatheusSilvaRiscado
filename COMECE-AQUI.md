@@ -3,7 +3,7 @@
 **Matheus Silva Riscado · RM573622 · individual**  
 **Atualizado em 12/10/2026 · prazo confirmado no portal: 13/10/2026, às 23h59.**
 
-As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. A segunda reprodução integral em sessão limpa foi concluída em 06/10/2026. O vídeo corrigido foi publicado como não listado e incluído no README. **Resta enviar o link do repositório pelo portal.**
+As 80 imagens reais e seus 80 rótulos (173 caixas) estão organizados e validados. Os modelos foram executados em 04/10/2026; resultados, pesos e discussão estão preservados no notebook e em `resultados/20261004T164740010266Z/`. Reproduções integrais em sessão limpa foram concluídas em 06/10 e 12/10/2026; a última testou as correções de gráficos e dependências, com 15 células sem erro e cinco figuras embutidas automaticamente. O vídeo corrigido foi publicado como não listado e incluído no README. **Resta enviar pelo portal o [PDF de entrega com os links](docs/MatheusSilvaRiscado_rm573622_pbl_fase6.pdf).**
 
 ## Começar a avaliação
 

@@ -4,9 +4,9 @@
 
 Protótipo didático para reconhecer garrafas e bananas em imagens e comparar YOLOv5 customizado, YOLOv3 pré-treinado e uma CNN treinada do zero.
 
-**Estado em 12/10/2026: modelos executados, segunda execução integral em sessão limpa aprovada e vídeo demonstrativo publicado como não listado no YouTube. Envio pelo portal pendente.**
+**Estado em 12/10/2026: modelos executados, execuções integrais em sessão limpa aprovadas em 06/10 e 12/10 e vídeo demonstrativo publicado como não listado no YouTube. Envio pelo portal pendente.**
 
-A [validação dos rótulos](docs/VERIFICACAO-ROTULOS.json) registra os dados reais. A [verificação da execução](docs/VERIFICACAO-EXECUCAO.json) documenta as 15 células executadas, sem saídas de erro, e os hashes dos 96 artefatos recuperados do Drive. O [checklist do barema](docs/CHECKLIST-BAREMA.md) acompanha os cinco critérios.
+A [validação dos rótulos](docs/VERIFICACAO-ROTULOS.json) registra os dados reais. A [verificação da execução](docs/VERIFICACAO-EXECUCAO.json) documenta as 15 células executadas, sem saídas de erro, e os hashes dos 96 artefatos recuperados do Drive. A [verificação das correções de 12/10](evidencias/reexecucao-20261012/README.md) comprova as versões fixas e a exibição automática dos cinco gráficos em uma nova execução. O [checklist do barema](docs/CHECKLIST-BAREMA.md) acompanha os cinco critérios.
 
 São 40 fotos de garrafas (14 do autor e 26 do Wikimedia Commons) e 40 de bananas (Wikimedia Commons). Cada classe tem 32 imagens de treino, 4 de validação e 4 de teste. Três fotos adicionais do autor, com as duas classes juntas, estão separadas para demonstração qualitativa.
 

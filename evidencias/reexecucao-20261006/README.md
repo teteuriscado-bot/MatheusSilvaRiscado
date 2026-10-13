@@ -4,7 +4,7 @@ Execução `20261006T122041599048Z`, concluída em uma nova sessão T4. As 15 c�
 
 - [Notebook revisado com saídas desta rodada](VERIFICACAO_LIMPA_2026-10-06_MatheusSilvaRiscado_rm573622.ipynb)
 - [Exportação original antes da revisão](notebook-original-executado.ipynb)
-- [Registro de conferência e hashes](../../docs/VERIFICACAO-SESSAO-LIMPA.json)
+- [Registro histórico de conferência e hashes de 06/10](../../docs/VERIFICACAO-SESSAO-LIMPA.json)
 - [ZIP completo dos resultados](https://github.com/teteuriscado-bot/MatheusSilvaRiscado/releases/download/fase6-2026-10-04/RESULTADOS-FARMTECH-20261006T122041599048Z.zip)
 
 ## Achados
@@ -28,3 +28,7 @@ O painel mostra todas as oito imagens. O YOLOv5 selecionado não detectou a bana
 O código é reproduzível operacionalmente, mas os treinos YOLOv5 não produziram métricas idênticas entre as duas sessões, mesmo com seed fixa e a mesma GPU declarada. A causa exata dessa variação não foi isolada. Duas execuções e oito imagens de teste são insuficientes para caracterizar estabilidade ou desempenho de produção. As medições de tempo dependem da sessão; não representam uma mudança de arquitetura.
 
 Esta rodada verifica a execução do projeto e não substitui a análise nem os pesos publicados da rodada original. O relatório principal continua vinculado à execução de 04/10/2026; este caderno conserva exclusivamente as saídas de `20261006T122041599048Z`.
+
+## Correção documental de 12/10
+
+O PNG original da CNN foi acrescentado às saídas da cópia revisada, onde estava ausente. O código de 06/10 e a exportação original foram preservados. O hash `notebook_sha256` do registro de 06/10 identifica a cópia revisada daquela data, anterior a essa incorporação; o hash atualizado e a origem do PNG constam em `docs/VERIFICACAO-CORRECOES-20261012.json`. A cópia histórica não recebeu as mudanças posteriores de instalação e exibição do notebook principal.

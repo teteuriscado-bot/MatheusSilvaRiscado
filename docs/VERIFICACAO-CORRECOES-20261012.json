@@ -1,0 +1,20 @@
+{
+  "data_local": "2026-10-12",
+  "fuso": "America/Sao_Paulo",
+  "run_id": "20261013T005458935971Z",
+  "status": "aprovado",
+  "hashes_sha256": {
+    "MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb": "95eedb68b49679c80972a4fc38c11cefe865505a79c4cb9974ed8af958c933fc",
+    "evidencias\\reexecucao-20261012\\notebook-original-executado.ipynb": "7006e446a1450605f8a8d5e57e61f33cd3ea67e1a3831374b1acf762e8663cbb",
+    "evidencias\\reexecucao-20261012\\VERIFICACAO_CORRECOES_2026-10-12.ipynb": "cb536863e8ce54c718c8ffe6d4ee0db288f5729ee1c6bd9d9d5e38def39f8be4"
+  },
+  "registro_execucao": "../evidencias/reexecucao-20261012/VERIFICACAO.json",
+  "celulas_codigo": 15,
+  "erros_execucao": 0,
+  "figuras_embutidas": 5,
+  "dependencias_centrais": 28,
+  "unica_diferenca_codigo_copia_teste": "USE_DRIVE=True para persistir resultados; dataset público igual",
+  "links_relativos_verificados": 31,
+  "envio_portal": "pendente",
+  "escopo": "Correções de exibição, dependências, comentários e documentação. Resultados de 04/10 preservados; nova execução registrada separadamente."
+}

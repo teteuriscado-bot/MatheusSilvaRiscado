@@ -6,7 +6,7 @@ Atualizado em 12/10/2026, com base no enunciado, no barema e nos arquivos public
 | Critério | Peso | Evidência exigida | Estado atual |
 |---|---:|---|---|
 | Repositório no GitHub | 1,5 | Repositório no prazo; notebook correto; nome de arquivo conforme o enunciado; sem commits após a entrega | Notebook nomeado `MatheusSilvaRiscado_rm573622_pbl_fase6.ipynb`; repositório público publicado; envio pelo portal pendente |
-| Notebook Jupyter/Colab | 3,0 | Python funcional, otimizado e executado; markdown com resultados, achados, pontos fortes, conclusões e limitações | 15 células executadas sem saídas de erro; análise e gráficos reais preservados. Segunda reprodução integral em sessão limpa aprovada em 06/10/2026 |
+| Notebook Jupyter/Colab | 3,0 | Python funcional, otimizado e executado; markdown com resultados, achados, pontos fortes, conclusões e limitações | 15 células executadas sem saídas de erro; análise e gráficos reais preservados. Reproduções integrais aprovadas em 06/10 e 12/10; cinco gráficos embutidos automaticamente na última rodada |
 | README | 2,0 | Introdução clara; links funcionais para notebook e vídeo; guiar a leitura sem repetir o notebook | Notebook, Colab, dataset, resultados e vídeo publicados e referenciados |
 | Vídeo demonstrativo | 2,0 | Até 5 minutos; funcionamento claro; YouTube não listado; link no README | [Vídeo corrigido](https://youtu.be/zm5nAksnAlU), não listado, aproximadamente 4min30s, incluído no README |
 | Organização e apresentação | 1,5 | Estrutura clara; nomes corretos; notebook organizado e fácil de ler | Dataset, créditos, 96 artefatos e análise organizados; gráficos revisados e hashes registrados |
@@ -35,6 +35,7 @@ Atualizado em 12/10/2026, com base no enunciado, no barema e nos arquivos public
 - [x] Vídeo não listado de aproximadamente 4min30s, demonstrando resultados reais; link no README.
 - [x] Notebook configurado por padrão para baixar o dataset público sem montar o Drive.
 - [x] Repositório público com nome e arquivos conferidos.
+- [x] Correções verificadas em 12/10: 28 versões centrais fixas, gráficos exibidos automaticamente, 15 células em ordem sem erro; evidências em `evidencias/reexecucao-20261012/`.
 - [ ] Entrega no prazo e congelamento dos commits após o envio.
 
 O material está publicado; o envio acadêmico pelo portal permanece pendente. Após enviá-lo, preservar o comprovante e não realizar novos commits. O barema de 9 a 10 exige os critérios atendidos com excelência, comparações bem concluídas e demonstração clara.
